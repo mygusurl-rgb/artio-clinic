@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>아티오의원 ARTIO | 강남역 1:1 개인실 · 의사 직접 진단 리프팅 · 스킨부스터 · 필러</title>
+<meta name="description" content="강남역 아티오의원(ARTIO)은 공장형이 아닌 1:1 개인실 진료로, 3D 피부진단과 원장의 최종 설계를 거쳐 한 사람의 황금비율(Individualized Golden Ratio)을 찾습니다. 리프팅 · 스킨부스터 · 보톡스 · 필러.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.artioclinic.com/">
+<link rel="alternate" hreflang="ko" href="https://www.artioclinic.com/">
+<link rel="alternate" hreflang="x-default" href="https://www.artioclinic.com/">
+<link rel="alternate" type="text/markdown" title="ARTIO clinic facts for AI assistants" href="https://www.artioclinic.com/llms.txt">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARTIO 아티오의원">
+<meta property="og:title" content="ARTIO 아티오의원 — Individualized Golden Ratio">
+<meta property="og:description" content="1:1 개인실, 3D 진단, 원장의 최종 설계. 한 사람의 비율을 찾는 강남역 미용의료 클리닉.">
+<meta property="og:image" content="https://www.artioclinic.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://www.artioclinic.com/">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalClinic","@id":"https://www.artioclinic.com/#clinic","name":"아티오의원 (강남)","logo":"https://www.artioclinic.com/logo.png","image":"https://www.artioclinic.com/og-image.jpg","alternateName":["ARTIO","ARTIO Clinic Gangnam"],"slogan":"Individualized Golden Ratio","description":"Private, doctor-led aesthetic clinic in Gangnam, Seoul. 3D skin diagnosis, doctor-designed lifting, skin boosters, botox and filler.","url":"https://www.artioclinic.com/","telephone":"+82-2-2138-0312","founder":{"@type":"Physician","name":"이주형","alternateName":"Lee Juhyeong","image":"https://www.artioclinic.com/doctor.jpg","jobTitle":"대표원장","medicalSpecialty":"Family Medicine"},"address":{"@type":"PostalAddress","streetAddress":"강남대로65길 1, 효봉빌딩 10층","addressLocality":"서초구","addressRegion":"서울특별시","addressCountry":"KR"},"faxNumber":"+82-2-2138-0313","hasMap":"https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C65%EA%B8%B8%201%20%ED%9A%A8%EB%B4%89%EB%B9%8C%EB%94%A9","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"16:00"}],"availableLanguage":["ko","en","zh","ja"],"availableService":[{"@type":"MedicalProcedure","name":"Ulthera Prime"},{"@type":"MedicalProcedure","name":"Thermage FLX"},{"@type":"MedicalProcedure","name":"Skin Booster"},{"@type":"MedicalProcedure","name":"Botulinum toxin"},{"@type":"MedicalProcedure","name":"Dermal filler"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"울쎄라와 써마지는 어떻게 다른가요?","acceptedAnswer":{"@type":"Answer","text":"울쎄라는 깊은 근막층(SMAS)에 작용해 처진 윤곽을 끌어올리는 데, 써마지는 진피층을 가열해 피부를 조이는 타이트닝에 강점이 있습니다."}},{"@type":"Question","name":"리프팅 샷 수는 어떻게 정하나요?","acceptedAnswer":{"@type":"Answer","text":"진단 후 원장이 부위별로 장비와 샷 수를 직접 정합니다."}},{"@type":"Question","name":"보톡스를 맞으면 표정이 어색해지나요?","acceptedAnswer":{"@type":"Answer","text":"아티오의원은 자연스러운 표정은 남기고 주름만 옅어지도록 용량과 위치를 설계합니다."}}]}]}</script>
+<link rel="icon" type="image/png" href="assets/brand/favicon.png">
+<link href="fonts/google/fonts.css" rel="stylesheet">
+<link rel="stylesheet" href="fonts/pretendard/pretendard.css">
+<style>
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#F3EEE5;color:#463C33;font-family:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+*{box-sizing:border-box}
+a{color:#463C33;text-decoration:none}
+a:hover{color:#7A6B5A}
+img{display:block;max-width:100%}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+::selection{background:#DCCFBB}
+</style>
+</helmet>
+
+<header style="position:fixed;top:0;left:0;right:0;z-index:40;background:rgba(243,238,229,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(70,60,51,0.1)">
+  <div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,5vw,64px);height:{{ hdrH }};display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#top" aria-label="ARTIO CLINIC 아티오의원 홈" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="assets/brand/logo-h-dark.png" alt="ARTIO CLINIC 아티오의원" width="2355" height="401" style="height:{{ logoH }};width:auto">
+    </a>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="주요 메뉴" style="display:flex;gap:26px;font-size:13px;letter-spacing:0.02em">
+        <a href="#philosophy">Philosophy</a>
+        <a href="#journey">Journey</a>
+        <a href="#lifting">Lifting</a>
+        <a href="#booster">Skin Booster</a>
+        <a href="#botox">Botox</a>
+        <a href="#filler">Filler</a>
+        <a href="#qna">Notes &amp; Q&amp;A</a>
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:20px">
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div aria-label="언어 선택" style="display:flex;gap:9px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#7A6B5A">
+          <a href="/ko" hreflang="ko" aria-current="page" style="color:#463C33">KO</a>
+          <a href="/en" hreflang="en" style="color:#7A6B5A">EN</a>
+          <a href="/zh-hans" hreflang="zh-Hans" style="color:#7A6B5A">简</a>
+          <a href="/zh-hant" hreflang="zh-Hant" style="color:#7A6B5A">繁</a>
+          <a href="/ja" hreflang="ja" style="color:#7A6B5A">日</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notPhone }}" hint-placeholder-val="{{ true }}">
+      <button type="button" onClick="{{ openRes }}" style="font:inherit;font-size:12.5px;letter-spacing:0.06em;padding:10px 18px;border-radius:999px;border:1px solid rgba(70,60,51,0.5);background:transparent;color:#463C33;cursor:pointer;white-space:nowrap;transition:background .3s,color .3s" style-hover="background:#463C33;color:#F0EADD">상담 예약</button>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button type="button" aria-label="메뉴 열기" aria-expanded="{{ menuOpen }}" onClick="{{ toggleMenu }}" style="width:44px;height:44px;margin-right:-10px;border:none;background:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;padding:0">
+          <span style="width:22px;height:1px;background:#463C33;display:block"></span>
+          <span style="width:22px;height:1px;background:#463C33;display:block"></span>
+        </button>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="모바일 메뉴" style="border-top:1px solid rgba(70,60,51,0.1);padding:8px clamp(20px,5vw,64px) 28px;display:flex;flex-direction:column;background:#F3EEE5;max-height:calc(100vh - {{ hdrH }});overflow:auto">
+      <sc-for list="{{ mobileLinks }}" as="m" hint-placeholder-count="10">
+        <a href="{{ m.href }}" onClick="{{ closeMenu }}" style="padding:14px 0;border-bottom:1px solid rgba(70,60,51,0.1);display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:'Cormorant Garamond',serif;font-size:24px">{{ m.en }}</span><span style="font-size:12.5px;color:#7A6B5A">{{ m.ko }}</span></a>
+      </sc-for>
+      <div style="display:flex;gap:20px;padding-top:20px;font-family:'IBM Plex Mono',monospace;font-size:12px">
+        <a href="/ko">KO</a><a href="/en" style="color:#7A6B5A">EN</a><a href="/zh-hans" style="color:#7A6B5A">简</a><a href="/zh-hant" style="color:#7A6B5A">繁</a><a href="/ja" style="color:#7A6B5A">日</a>
+      </div>
+    </nav>
+  </sc-if>
+</header>
+<div aria-hidden="true" style="height:{{ hdrH }}"></div>
+
+<main id="top">
+
+  <section aria-labelledby="hero-title" style="max-width:1440px;margin:0 auto;padding:clamp(40px,6vw,88px) clamp(20px,5vw,64px) clamp(72px,9vw,128px);display:flex;flex-wrap:wrap;gap:48px clamp(40px,5vw,88px);align-items:flex-end">
+    <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,480px);display:flex;flex-direction:column;gap:30px;padding-bottom:clamp(0px,2vw,24px)">
+      <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">INDIVIDUALIZED GOLDEN RATIO — GANGNAM, SEOUL</p>
+      <h1 id="hero-title" aria-label="아티오의원 ARTIO — 당신만의 비율, 당신만의 아름다움" style="margin:0;display:grid">
+          <span aria-hidden="{{ sl0.hidden }}" style="grid-area:1/1;display:flex;flex-direction:column;gap:20px;opacity:{{ sl0.op }};transform:translateY({{ sl0.ty }});transition:opacity 1.4s cubic-bezier(.2,.6,.2,1),transform 1.4s cubic-bezier(.2,.6,.2,1);pointer-events:{{ sl0.pe }}"><span style="font-weight:300;font-size:clamp(38px,5vw,76px);line-height:1.26;letter-spacing:-0.035em">당신만의 비율,<br>당신만의 아름다움.</span><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(22px,2.2vw,32px);color:#65594D">Your own ratio, your own beauty.</span></span>
+          <span aria-hidden="{{ sl1.hidden }}" style="grid-area:1/1;display:flex;flex-direction:column;gap:20px;opacity:{{ sl1.op }};transform:translateY({{ sl1.ty }});transition:opacity 1.4s cubic-bezier(.2,.6,.2,1),transform 1.4s cubic-bezier(.2,.6,.2,1);pointer-events:{{ sl1.pe }}"><span style="font-weight:300;font-size:clamp(38px,5vw,76px);line-height:1.26;letter-spacing:-0.035em">비율이<br>예술이 되는 곳.</span><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(22px,2.2vw,32px);color:#65594D">Where ratio becomes art.</span></span>
+          <span aria-hidden="{{ sl2.hidden }}" style="grid-area:1/1;display:flex;flex-direction:column;gap:20px;opacity:{{ sl2.op }};transform:translateY({{ sl2.ty }});transition:opacity 1.4s cubic-bezier(.2,.6,.2,1),transform 1.4s cubic-bezier(.2,.6,.2,1);pointer-events:{{ sl2.pe }}"><span style="font-weight:300;font-size:clamp(38px,5vw,76px);line-height:1.26;letter-spacing:-0.035em">궁극의 비율,<br>궁극의 아름다움.</span><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(22px,2.2vw,32px);color:#65594D">The ultimate ratio, the ultimate beauty.</span></span>
+      </h1>
+      <div role="group" aria-label="슬로건 선택" style="display:flex;gap:10px;align-items:center;margin:-16px 0 -10px">
+        <sc-for list="{{ slDots }}" as="d" hint-placeholder-count="3">
+          <button type="button" aria-label="{{ d.label }}" aria-pressed="{{ d.active }}" onClick="{{ d.onClick }}" style="width:36px;height:44px;padding:0;border:none;background:transparent;cursor:pointer;display:flex;align-items:center"><span style="display:block;width:100%;height:1px;background:{{ d.color }};transition:background .6s"></span></button>
+        </sc-for>
+      </div>
+      <p style="margin:0;max-width:34em;font-size:16px;line-height:1.9;color:#65594D;text-wrap:pretty">아티오의원은 한 사람에게 충분한 시간을 씁니다. 1:1 개인실에서 3D 진단과 원장의 최종 설계를 거쳐, 당신의 얼굴에 꼭 맞는 단 하나의 황금비율을 찾습니다.</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:28px;padding-top:4px">
+        <button type="button" onClick="{{ openRes }}" style="font:inherit;font-size:13.5px;letter-spacing:0.06em;padding:15px 30px;border-radius:999px;border:1px solid #463C33;background:#463C33;color:#F0EADD;cursor:pointer;transition:background .3s" style-hover="background:#5A4E43">나의 비율 상담하기</button>
+        <a href="#journey" style="font-size:13.5px;border-bottom:1px solid #B9A992;padding-bottom:4px">내원부터 시술까지의 과정</a>
+      </div>
+    </div>
+    <sc-if value="{{ heroF }}" hint-placeholder-val="{{ true }}">
+      <figure style="order:{{ heroOrder }};flex:1 1 0;min-width:min(100%,320px);margin:0;display:flex;flex-direction:column;gap:12px">
+        <div style="aspect-ratio:{{ heroAspect }};border-radius:4px;overflow:hidden;background:#EAE2D4">
+          <img src="assets/hero/golden-ratio-face.jpg" alt="옆모습 여성 얼굴 위에 황금 나선과 1 : 1.618 분할선을 겹쳐 표현한 비율 이미지" style="width:100%;height:100%;object-fit:cover;object-position:30% 35%;filter:saturate(0.92)">
+        </div>
+        <figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span>Golden ratio · 1 : 1.618</span><span>Model image · not a patient</span></figcaption>
+      </figure>
+    </sc-if>
+                      </section>
+
+  <section id="philosophy" aria-labelledby="philosophy-title" style="scroll-margin-top:72px;background:#E9E1D3">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,7vw,104px)">
+      <div style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div data-reveal="" style="flex:1 1 0;min-width:min(100%,280px);display:flex;flex-direction:column;gap:22px">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">01 — PHILOSOPHY</p>
+          <figure style="margin:0;display:flex;flex-direction:column;gap:14px">
+            <div style="display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;gap:8px 10px;align-items:center">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#7A6B5A">1</span>
+              <svg viewBox="-6 -6 1630 1012" role="img" aria-label="황금 직사각형과 황금 나선. 1 : 1.618 비율의 사각형이 점점 작은 정사각형으로 나뉘며 한 점(x)으로 수렴합니다." style="width:100%;height:auto;display:block;overflow:visible">
+                <rect x="0" y="0" width="1000" height="1000" fill="#E2D8C8"></rect>
+                <rect x="1000" y="0" width="618" height="618" fill="#EDE6DA"></rect>
+                <rect x="1236" y="618" width="382" height="382" fill="#E2D8C8"></rect>
+                <rect x="1000" y="764" width="236" height="236" fill="#EDE6DA"></rect>
+                <g fill="none" stroke="#463C33" stroke-opacity="0.35" stroke-width="1" vector-effect="non-scaling-stroke">
+                  <rect x="0" y="0" width="1618" height="1000" vector-effect="non-scaling-stroke"></rect>
+                  <path d="M1000 0V1000M1000 618H1618M1236 618V1000M1000 764H1236M1146 618V764M1146 708H1236M1180 708V764M1146 730H1180" vector-effect="non-scaling-stroke"></path>
+                </g>
+                <path d="M0 0L1618 1000M1618 0L1000 1000" fill="none" stroke="#9C8B74" stroke-width="1" stroke-dasharray="4 6" vector-effect="non-scaling-stroke"></path>
+                <path d="M0 1000A1000 1000 0 0 1 1000 0A618 618 0 0 1 1618 618A382 382 0 0 1 1236 1000A236 236 0 0 1 1000 764A146 146 0 0 1 1146 618A90 90 0 0 1 1236 708A56 56 0 0 1 1180 764A34 34 0 0 1 1146 730" fill="none" stroke="#463C33" stroke-width="1.6" vector-effect="non-scaling-stroke"></path>
+                <circle cx="1171" cy="724" r="34" fill="none" stroke="#463C33" stroke-width="1" vector-effect="non-scaling-stroke"></circle>
+                <circle cx="1171" cy="724" r="11" fill="#463C33"></circle>
+              </svg>
+              <span></span>
+              <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#7A6B5A"><span>1.618</span><span>→ x</span></span>
+            </div>
+            <figcaption style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,2.8vw,42px);line-height:1">1 : 1.618 <span style="color:#9C8B74">→ 1 : <em>x</em></span></span><span style="font-size:12.5px;line-height:1.7;color:#7A6B5A">황금비율의 나선은 결국 한 점으로 모입니다. 그 점이 당신입니다.</span></figcaption>
+          </figure>
+                  </div>
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:22px">
+          <h2 id="philosophy-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em;text-wrap:pretty">단 한 사람의 얼굴을,<br>깊이 들여다봅니다.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em;text-wrap:pretty">황금비율은 오래된 아름다움의 기준입니다. 하지만 같은 1 : 1.618도 골격과 피부, 표정에 따라 다르게 보입니다. ARTIO가 찾는 것은 정해진 숫자가 아니라 한 사람의 <em style="font-family:'Cormorant Garamond',serif;font-size:1.15em">x</em> — Individualized Golden Ratio입니다. 그래서 진료 방식부터 다르게 설계했습니다.</p>
+        </div>
+      </div>
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:40px clamp(40px,5vw,80px);padding:clamp(32px,4vw,56px);background:#F3EEE5;border-radius:4px">
+        <div style="flex:1 1 0;min-width:min(100%,280px);display:flex;flex-direction:column;gap:20px">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#7A6B5A">OUTER RATIO × INNER RATIO</p>
+          <h3 style="margin:0;font-weight:300;font-size:clamp(24px,2.4vw,34px);line-height:1.45;letter-spacing:-0.02em;text-wrap:pretty">보이는 비율 아래에,<br>또 하나의 비율이 있습니다.</h3>
+          <p style="margin:0;font-size:15px;line-height:1.95;color:#65594D;text-wrap:pretty">얼굴의 비율은 겉으로 보이는 길이와 각도만이 아닙니다. 표피 · 진피 · 지방 · 근육 · 뼈, 얼굴을 이루는 각 층에도 건강한 비율이 있습니다.</p>
+          <p style="margin:0;font-size:15px;line-height:1.95;color:#65594D;text-wrap:pretty">나이가 들면 이 층들이 서로 다른 속도로 얇아지고, 꺼지고, 내려옵니다. 층 사이의 균형이 무너지는 것, 그것이 우리가 노화라고 부르는 변화입니다. ARTIO는 겉의 비율과 함께 속의 비율을 보고, 어느 층에 무엇이 필요한지 판단합니다.</p>
+          <dl style="margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:10px 14px;font-size:13px;color:#65594D;align-items:center">
+            <dt style="display:flex"><span style="width:28px;height:10px;border:1px dashed rgba(70,60,51,0.45);border-radius:2px"></span></dt><dd style="margin:0">젊을 때의 두께 · 볼륨</dd>
+            <dt style="display:flex"><span style="width:28px;height:10px;background:#C2AE90;border-radius:2px"></span></dt><dd style="margin:0">나이가 든 뒤</dd>
+          </dl>
+        </div>
+        <figure style="flex:1.618 1 0;min-width:min(100%,400px);margin:0;display:flex;flex-direction:column;gap:14px">
+          <ol aria-label="얼굴 층별 비율의 노화 변화" style="list-style:none;margin:0;padding:0;border-top:1px solid #463C33">
+          <li style="display:grid;grid-template-columns:minmax(96px,132px) minmax(0,1fr);gap:8px 20px;padding:18px 0;border-bottom:1px solid rgba(70,60,51,0.14);align-items:start">
+            <h4 style="margin:0;display:flex;flex-direction:column;gap:2px;padding-top:1px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:21px;line-height:1.1">Epidermis</span><span style="font-size:12.5px;font-weight:500;color:#65594D">표피</span></h4>
+            <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+              <div aria-hidden="true" style="position:relative;height:14px"><span style="position:absolute;left:0;top:0;bottom:0;width:92%;border:1px dashed rgba(70,60,51,0.45);border-radius:2px"></span><span style="position:absolute;left:0;top:0;bottom:0;width:80%;background:#E4D6C1;border-radius:2px"></span></div>
+              <p style="margin:0;font-size:13.5px;line-height:1.75;color:#65594D">수분 보유력과 재생 속도가 떨어져 결이 거칠어집니다.</p>
+              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.02em;color:#7A6B5A">→ 스킨부스터 · 더마샤인 · 레이저</p>
+            </div>
+          </li>
+          <li style="display:grid;grid-template-columns:minmax(96px,132px) minmax(0,1fr);gap:8px 20px;padding:18px 0;border-bottom:1px solid rgba(70,60,51,0.14);align-items:start">
+            <h4 style="margin:0;display:flex;flex-direction:column;gap:2px;padding-top:1px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:21px;line-height:1.1">Dermis</span><span style="font-size:12.5px;font-weight:500;color:#65594D">진피</span></h4>
+            <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+              <div aria-hidden="true" style="position:relative;height:14px"><span style="position:absolute;left:0;top:0;bottom:0;width:90%;border:1px dashed rgba(70,60,51,0.45);border-radius:2px"></span><span style="position:absolute;left:0;top:0;bottom:0;width:58%;background:#D2BFA3;border-radius:2px"></span></div>
+              <p style="margin:0;font-size:13.5px;line-height:1.75;color:#65594D">콜라겐과 탄력섬유가 줄어 얇아지고 탄력이 떨어집니다.</p>
+              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.02em;color:#7A6B5A">→ 써마지 · 포텐자 · 리쥬란 · 스컬트라</p>
+            </div>
+          </li>
+          <li style="display:grid;grid-template-columns:minmax(96px,132px) minmax(0,1fr);gap:8px 20px;padding:18px 0;border-bottom:1px solid rgba(70,60,51,0.14);align-items:start">
+            <h4 style="margin:0;display:flex;flex-direction:column;gap:2px;padding-top:1px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:21px;line-height:1.1">Fat</span><span style="font-size:12.5px;font-weight:500;color:#65594D">지방</span></h4>
+            <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+              <div aria-hidden="true" style="position:relative;height:14px"><span style="position:absolute;left:0;top:0;bottom:0;width:86%;border:1px dashed rgba(70,60,51,0.45);border-radius:2px"></span><span style="position:absolute;left:0;top:0;bottom:0;width:60%;background:#C2AE90;border-radius:2px"></span></div>
+              <p style="margin:0;font-size:13.5px;line-height:1.75;color:#65594D">깊은 지방은 꺼지고, 얕은 지방은 아래로 내려옵니다.</p>
+              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.02em;color:#7A6B5A">→ 필러 · 온다</p>
+            </div>
+          </li>
+          <li style="display:grid;grid-template-columns:minmax(96px,132px) minmax(0,1fr);gap:8px 20px;padding:18px 0;border-bottom:1px solid rgba(70,60,51,0.14);align-items:start">
+            <h4 style="margin:0;display:flex;flex-direction:column;gap:2px;padding-top:1px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:21px;line-height:1.1">Muscle · SMAS</span><span style="font-size:12.5px;font-weight:500;color:#65594D">근육 · 근막</span></h4>
+            <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+              <div aria-hidden="true" style="position:relative;height:14px"><span style="position:absolute;left:0;top:0;bottom:0;width:84%;border:1px dashed rgba(70,60,51,0.45);border-radius:2px"></span><span style="position:absolute;left:0;top:0;bottom:0;width:66%;background:#A08A73;border-radius:2px"></span></div>
+              <p style="margin:0;font-size:13.5px;line-height:1.75;color:#65594D">지지력이 약해지고 표정 근육의 습관이 주름으로 남습니다.</p>
+              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.02em;color:#7A6B5A">→ 울쎄라 · 쿨소닉 · 보톡스</p>
+            </div>
+          </li>
+          <li style="display:grid;grid-template-columns:minmax(96px,132px) minmax(0,1fr);gap:8px 20px;padding:18px 0;border-bottom:1px solid rgba(70,60,51,0.14);align-items:start">
+            <h4 style="margin:0;display:flex;flex-direction:column;gap:2px;padding-top:1px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:21px;line-height:1.1">Bone</span><span style="font-size:12.5px;font-weight:500;color:#65594D">뼈</span></h4>
+            <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+              <div aria-hidden="true" style="position:relative;height:14px"><span style="position:absolute;left:0;top:0;bottom:0;width:94%;border:1px dashed rgba(70,60,51,0.45);border-radius:2px"></span><span style="position:absolute;left:0;top:0;bottom:0;width:74%;background:#76675A;border-radius:2px"></span></div>
+              <p style="margin:0;font-size:13.5px;line-height:1.75;color:#65594D">눈 주변 · 중안부 · 턱의 골격이 흡수되어 지지 기반이 줄어듭니다.</p>
+              <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.02em;color:#7A6B5A">→ 구조 필러 · MD Code</p>
+            </div>
+          </li>
+          </ol>
+          <figcaption style="font-size:11.5px;line-height:1.7;color:#7A6B5A">* 층별 변화를 설명하기 위한 개념도이며, 실제 두께 비율이나 개인별 수치가 아닙니다.</figcaption>
+        </figure>
+      </div>
+      <div style="display:grid;grid-template-columns:{{ car.fit300 }};grid-auto-flow:{{ car.flow }};grid-auto-columns:{{ car.auto }};overflow-x:{{ car.ox }};scroll-snap-type:{{ car.snap }};scrollbar-width:none;margin:0 {{ car.mx }};padding:0 {{ car.px }};scroll-padding-left:{{ car.px }};gap:clamp(20px,2.4vw,32px)">
+        <article data-reveal="" style="scroll-snap-align:start;background:#F3EEE5;border-radius:4px;overflow:hidden;display:flex;flex-direction:column">
+          <div style="aspect-ratio:1.618/1;background:#DDD3C3"><img src="assets/space2/vip-single-1.jpg" alt="우드 천장과 곡선 간접조명이 있는 VIP 1인 시술실" loading="lazy" style="object-position:50% 62%;width:100%;height:100%;object-fit:cover"></div>
+          <div style="padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">PRINCIPLE 01</span>
+            <h3 style="margin:0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:32px;line-height:1.1">Private Time</span><span style="font-size:17px;font-weight:500">개인실, 그리고 충분한 시간</span></h3>
+            <p style="margin:0;font-size:14.5px;line-height:1.85;color:#65594D">대기부터 상담, 시술, 회복까지 개인 공간에서 진행합니다. 한 사람에게 필요한 시간을 먼저 확보하고 예약을 받습니다.</p>
+          </div>
+        </article>
+        <article data-reveal="" style="scroll-snap-align:start;background:#F3EEE5;border-radius:4px;overflow:hidden;display:flex;flex-direction:column">
+          <div style="aspect-ratio:1.618/1;background:#EAE2D4;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/devices/eve-muse.webp" alt="3D 피부·얼굴 진단기기 이브 뮤즈(EVE MUSE) — 타원형 화이트 본체와 로즈골드 링" loading="lazy" style="width:100%;height:100%;object-fit:contain;object-position:50% 55%;transform:scale(1.18);mix-blend-mode:multiply"></div>
+          <div style="padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">PRINCIPLE 02</span>
+            <h3 style="margin:0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:32px;line-height:1.1">Precise Diagnosis</span><span style="font-size:17px;font-weight:500">3D 진단과 원장의 최종 결정</span></h3>
+            <p style="margin:0;font-size:14.5px;line-height:1.85;color:#65594D">3D 피부진단기(이브 뮤즈)로 피부 상태와 얼굴의 입체 구조, 볼륨 분포, 비대칭을 분석합니다. 치료 방향의 최종 결정은 원장이 직접 내립니다.</p>
+          </div>
+        </article>
+        <article data-reveal="" style="scroll-snap-align:start;background:#F3EEE5;border-radius:4px;overflow:hidden;display:flex;flex-direction:column">
+          <div style="aspect-ratio:1.618/1;background:#DDD3C3"><img src="assets/space2/consult-2.jpg" alt="대리석 벽과 펜던트 조명이 있는 1:1 상담실" loading="lazy" style="object-position:50% 66%;width:100%;height:100%;object-fit:cover"></div>
+          <div style="padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">PRINCIPLE 03</span>
+            <h3 style="margin:0;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:32px;line-height:1.1">Lifelong Care</span><span style="font-size:17px;font-weight:500">한 사람의 미용 주치의</span></h3>
+            <p style="margin:0;font-size:14.5px;line-height:1.85;color:#65594D">한 번의 시술로 끝나지 않습니다. 나이와 피부 변화에 맞춰 생애주기별 안티에이징 플랜을 함께 세우고 관리합니다.</p>
+          </div>
+        </article>
+      </div>
+      <sc-if value="{{ isPhone }}" hint-placeholder-val="{{ false }}"><p aria-hidden="true" style="margin:-10px 0 0;display:flex;justify-content:flex-end;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#7A6B5A">옆으로 넘겨 보기 →</p></sc-if>
+    </div>
+  </section>
+
+  <section id="journey" aria-labelledby="journey-title" style="scroll-margin-top:72px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(48px,6vw,80px)">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div style="flex:1 1 0;min-width:min(100%,260px)"><p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">02 — PATIENT JOURNEY</p></div>
+        <div style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:22px">
+          <h2 id="journey-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">시술 전, 두 번의 확인을 거칩니다.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em">진단 결과를 바탕으로 상담실장과 먼저 이야기하고, 원장이 다시 직접 보고 최종 설계를 확정합니다. 시간이 조금 더 걸리지만 그만큼 정확해집니다.</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <p style="margin:0;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#7A6B5A">PHASE 1 — BEFORE</span><span style="font-size:13.5px;color:#65594D">진단과 설계 · 시술 전</span></p>
+          <ol start="1" style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:{{ jCols }};gap:0 clamp(16px,2vw,28px)">
+            <sc-for list="{{ journeyA }}" as="j" hint-placeholder-count="4">
+            <li data-reveal="" style="border-top:1px solid {{ j.line }};padding:26px 24px 32px 0;min-width:0;display:flex;flex-direction:column;gap:12px;position:relative">
+              <span style="position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;background:{{ j.dot }}"></span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A;padding-top:6px">{{ j.no }} · {{ j.who }}</span>
+              <h3 style="margin:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;line-height:1.1;text-wrap:balance">{{ j.en }}</span><span style="font-size:15.5px;font-weight:500">{{ j.ko }}</span></h3>
+              <p style="margin:0;font-size:14px;line-height:1.8;color:#65594D">{{ j.desc }}</p>
+            </li>
+            </sc-for>
+          </ol>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <p style="margin:0;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#7A6B5A">PHASE 2 — TREATMENT &amp; AFTER</span><span style="font-size:13.5px;color:#65594D">시술과 그 이후</span></p>
+          <ol start="5" style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:{{ jCols }};gap:0 clamp(16px,2vw,28px)">
+            <sc-for list="{{ journeyB }}" as="j" hint-placeholder-count="3">
+            <li data-reveal="" style="border-top:1px solid {{ j.line }};padding:26px 24px 32px 0;min-width:0;display:flex;flex-direction:column;gap:12px;position:relative">
+              <span style="position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;background:{{ j.dot }}"></span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A;padding-top:6px">{{ j.no }} · {{ j.who }}</span>
+              <h3 style="margin:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;line-height:1.1;text-wrap:balance">{{ j.en }}</span><span style="font-size:15.5px;font-weight:500">{{ j.ko }}</span></h3>
+              <p style="margin:0;font-size:14px;line-height:1.8;color:#65594D">{{ j.desc }}</p>
+            </li>
+            </sc-for>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lifelong" aria-labelledby="lifelong-title" style="scroll-margin-top:72px;background:#463C33;color:#F0EADD">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(48px,6vw,80px)">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div style="flex:1 1 0;min-width:min(100%,260px)"><p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#C9BCA8">03 — LIFELONG ANTI-AGING PLAN</p></div>
+        <div style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:22px">
+          <h2 id="lifelong-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">비율은 나이와 함께 달라집니다.<br>계획도 함께 달라져야 합니다.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#DCD2C2;max-width:36em">주치의처럼 한 사람의 변화를 기록하고, 그 시기에 맞는 만큼만 권합니다.</p>
+        </div>
+      </div>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:2px;background:rgba(240,234,221,0.14);border-radius:4px;overflow:hidden">
+        <sc-for list="{{ stages }}" as="s" hint-placeholder-count="4">
+          <li data-reveal="" style="background:#463C33;padding:clamp(28px,3vw,40px) clamp(22px,2.4vw,32px);display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(44px,4vw,60px);line-height:1;font-weight:300">{{ s.age }}</span>
+            <h3 style="margin:0;display:flex;flex-direction:column;gap:4px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:400;color:#C9BCA8">{{ s.en }}</span><span style="font-size:17px;font-weight:500">{{ s.ko }}</span></h3>
+            <p style="margin:0;font-size:14px;line-height:1.8;color:#DCD2C2;flex:1">{{ s.desc }}</p>
+            <p style="margin:0;padding-top:14px;border-top:1px solid rgba(240,234,221,0.18);font-size:12.5px;line-height:1.7;color:#C9BCA8">{{ s.ex }}</p>
+          </li>
+        </sc-for>
+      </ol>
+      <p style="margin:0;font-size:12px;color:#C9BCA8">* 연령대별 예시입니다. 실제 계획은 진단 후 원장이 개인별로 설계합니다.</p>
+    </div>
+  </section>
+
+  <section id="treatments" aria-labelledby="treatments-title" style="scroll-margin-top:72px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px) clamp(48px,6vw,80px);display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div style="flex:1 1 0;min-width:min(100%,260px)"><p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">04 — TREATMENTS</p></div>
+        <div style="flex:1.618 1 0;min-width:min(100%,460px)"><h2 id="treatments-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">네 가지 영역,<br>하나의 설계.</h2></div>
+      </div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0 clamp(24px,3vw,40px)">
+        <sc-for list="{{ areas }}" as="a" hint-placeholder-count="4">
+          <li style="border-top:1px solid #463C33"><a href="{{ a.href }}" style="display:flex;flex-direction:column;gap:10px;padding:24px 4px 30px;transition:background .3s" style-hover="background:#E9E1D3"><span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A"><span>{{ a.no }}</span><span>{{ a.count }}</span></span><span style="font-family:'Cormorant Garamond',serif;font-size:36px;line-height:1">{{ a.en }}</span><span style="font-size:14px;font-weight:500">{{ a.ko }}</span><span style="font-size:13.5px;line-height:1.75;color:#65594D">{{ a.desc }}</span></a></li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+
+  <section id="lifting" aria-labelledby="lifting-title" style="scroll-margin-top:72px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,64px) clamp(64px,11vw,168px);display:flex;flex-direction:column;gap:clamp(48px,6vw,80px)">
+      <div style="display:flex;flex-wrap:wrap;gap:40px clamp(40px,5vw,80px);align-items:stretch">
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:22px;justify-content:center">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">4.1 — LIFTING · ARTIO LIFTING DESIGN</p>
+          <h2 id="lifting-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">장비를 고르는 것이 아니라,<br>처방을 받습니다.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em;text-wrap:pretty">장비마다 잘 맞는 얼굴이 따로 있습니다. 처짐이 시작된 층, 피부 두께, 지방의 분포를 보고 어떤 장비를 몇 샷, 어느 부위에 쓸지 원장이 직접 설계합니다. 정해진 패키지가 아닌, 한 사람을 위한 조합입니다.</p>
+        </div>
+        <div data-reveal="" aria-label="ARTIO Lifting Design 처방 예시" style="flex:1 1 0;min-width:min(100%,320px);background:#FBF8F2;border:1px solid rgba(70,60,51,0.16);border-radius:4px;padding:clamp(24px,2.6vw,36px);display:flex;flex-direction:column;gap:18px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#65594D">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 12px;border-bottom:1px solid #463C33;padding-bottom:12px"><span style="font-family:'Cormorant Garamond',serif;font-size:20px;color:#463C33;letter-spacing:0.08em">ARTIO LIFTING DESIGN</span><span>No. ____</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px"><span style="color:#463C33">DIAGNOSIS</span><span style="display:flex;justify-content:space-between;border-bottom:1px dashed rgba(70,60,51,0.3);padding-bottom:6px"><span>처짐 위치 · 층</span><span>________</span></span><span style="display:flex;justify-content:space-between;border-bottom:1px dashed rgba(70,60,51,0.3);padding-bottom:6px"><span>피부 두께 · 탄력</span><span>________</span></span><span style="display:flex;justify-content:space-between;border-bottom:1px dashed rgba(70,60,51,0.3);padding-bottom:6px"><span>지방 분포</span><span>________</span></span></div>
+          <div style="display:flex;flex-direction:column;gap:8px"><span style="color:#463C33">DESIGN</span><span style="display:flex;justify-content:space-between;border-bottom:1px dashed rgba(70,60,51,0.3);padding-bottom:6px"><span>Device A · 부위</span><span>___ shots</span></span><span style="display:flex;justify-content:space-between;border-bottom:1px dashed rgba(70,60,51,0.3);padding-bottom:6px"><span>Device B · 부위</span><span>___ shots</span></span><span style="display:flex;justify-content:space-between;border-bottom:1px dashed rgba(70,60,51,0.3);padding-bottom:6px"><span>다음 시술 간격</span><span>___ weeks</span></span></div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-end;padding-top:6px"><span>상담실장 확인 ☐</span><span>원장 최종 확인 ☐</span></div>
+        </div>
+      </div>
+      <ul style="list-style:none;display:grid;grid-template-columns:{{ car.fit300 }};grid-auto-flow:{{ car.flow }};grid-auto-columns:{{ car.auto }};overflow-x:{{ car.ox }};scroll-snap-type:{{ car.snap }};scrollbar-width:none;margin:0 {{ car.mx }};padding:0 {{ car.px }};scroll-padding-left:{{ car.px }};gap:clamp(16px,2vw,24px)">
+        <sc-for list="{{ liftDevices }}" as="d" hint-placeholder-count="5">
+          <li data-reveal="" style="scroll-snap-align:start;background:#E9E1D3;border-radius:4px"><a href="{{ d.href }}" style="display:flex;flex-direction:column;gap:14px;height:100%;padding:clamp(24px,2.6vw,34px);border-radius:4px;transition:background .3s" style-hover="background:#E2D8C8">
+            <span style="display:flex;justify-content:space-between;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A"><span>{{ d.tech }}</span><span>{{ d.depth }}</span></span>
+            <span style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.05">{{ d.en }}</span><span style="font-size:14px;color:#65594D">{{ d.ko }}</span></span>
+            <span style="align-self:flex-start;font-size:12.5px;font-weight:500;padding:6px 12px;border-radius:999px;background:#463C33;color:#F0EADD">{{ d.role }}</span>
+            <span style="font-size:14px;line-height:1.8;color:#5E5347">{{ d.desc }}</span>
+            <span style="margin-top:auto;padding-top:14px;border-top:1px solid rgba(70,60,51,0.16);display:flex;flex-direction:column;gap:4px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A6B5A">GOOD FIT</span><span style="font-size:13.5px;line-height:1.7">{{ d.fit }}</span></span>
+          </a></li>
+        </sc-for>
+      </ul>
+      <sc-if value="{{ isPhone }}" hint-placeholder-val="{{ false }}"><p aria-hidden="true" style="margin:-10px 0 0;display:flex;justify-content:flex-end;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#7A6B5A">옆으로 넘겨 보기 →</p></sc-if>
+    </div>
+  </section>
+
+  <section id="booster" aria-labelledby="booster-title" style="scroll-margin-top:72px;background:#E9E1D3">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(48px,6vw,80px)">
+      <div style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div data-reveal="" style="flex:1 1 0;min-width:min(100%,260px);display:flex;flex-direction:column;gap:18px"><p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">4.2 — SKIN BOOSTER</p></div>
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:22px">
+          <h2 id="booster-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">피부에 무엇이 필요한지,<br>어떻게 채워 줄지.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em">같은 성분이라도 어떻게 넣느냐에 따라 결과와 회복 기간이 달라집니다. 피부 상태와 일정에 맞춰 주사, 더마샤인, MTS · LDM 중에서 방법을 정합니다.</p>
+        </div>
+      </div>
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0 clamp(24px,3vw,40px)">
+        <sc-for list="{{ methods }}" as="m" hint-placeholder-count="3">
+          <div style="border-top:1px solid #463C33;padding:22px 0 8px;display:flex;flex-direction:column;gap:10px">
+            <span style="display:flex;align-items:center;gap:10px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;padding:3px 8px;white-space:nowrap;flex-shrink:0;border-radius:2px;background:{{ m.bg }};color:{{ m.fg }};border:1px solid #463C33">{{ m.tag }}</span><span style="font-size:16px;font-weight:500">{{ m.ko }}</span></span>
+            <p style="margin:0;font-size:14px;line-height:1.8;color:#65594D">{{ m.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <ul style="list-style:none;display:grid;grid-template-columns:{{ car.fill300 }};grid-auto-flow:{{ car.flow }};grid-auto-columns:{{ car.auto }};overflow-x:{{ car.ox }};scroll-snap-type:{{ car.snap }};scrollbar-width:none;margin:0 {{ car.mx }};padding:0 {{ car.px }};scroll-padding-left:{{ car.px }};gap:clamp(14px,1.6vw,20px)">
+        <sc-for list="{{ boosters }}" as="b" hint-placeholder-count="8">
+          <li data-reveal="" style="scroll-snap-align:start;background:#F3EEE5;border-radius:4px"><a href="{{ b.href }}" style="display:flex;flex-direction:column;gap:12px;height:100%;padding:clamp(22px,2.4vw,30px);border-radius:4px;transition:background .3s" style-hover="background:#FAF7F1">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">{{ b.base }}</span>
+            <span style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Cormorant Garamond',serif;font-size:28px;line-height:1.1">{{ b.en }}</span><span style="font-size:14px;font-weight:500">{{ b.ko }}</span></span>
+            <span style="font-size:13.5px;line-height:1.8;color:#65594D;flex:1">{{ b.desc }}</span>
+            <span style="display:flex;flex-wrap:wrap;gap:6px">
+              <sc-for list="{{ b.tags }}" as="t" hint-placeholder-count="2">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;padding:3px 8px;border-radius:2px;border:1px solid rgba(70,60,51,0.35)">{{ t }}</span>
+              </sc-for>
+            </span>
+          </a></li>
+        </sc-for>
+      </ul>
+      <sc-if value="{{ isPhone }}" hint-placeholder-val="{{ false }}"><p aria-hidden="true" style="margin:-10px 0 0;display:flex;justify-content:flex-end;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#7A6B5A">옆으로 넘겨 보기 →</p></sc-if>
+    </div>
+  </section>
+
+  <section id="botox" aria-labelledby="botox-title" style="scroll-margin-top:72px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(48px,6vw,80px)">
+      <div style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div data-reveal="" style="flex:1 1 0;min-width:min(100%,260px);display:flex;flex-direction:column;gap:18px">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">4.3 — BOTOX</p>
+          <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(36px,3.6vw,56px);line-height:1.05">Soft lines,<br>living expression.</p>
+        </div>
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:22px">
+          <h2 id="botox-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">주름은 옅게,<br>표정은 그대로.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em">주름은 분명히 옅어지지만 여전히 웃고, 찡그릴 수 있어야 합니다. 근육의 움직임을 읽고 위치와 용량을 나누어, 굳은 가면 같은 인상(fake mask)이 생기지 않도록 설계합니다.</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(20px,2.4vw,32px)">
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:18px">
+          <h3 style="margin:0;display:flex;align-items:baseline;gap:12px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px">Expression Lines</span><span style="font-size:14px;font-weight:500;color:#65594D">표정주름 보톡스</span></h3>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:0 28px;border-top:1px solid rgba(70,60,51,0.18)">
+            <sc-for list="{{ botoxAreas }}" as="z" hint-placeholder-count="6">
+              <li style="border-bottom:1px solid rgba(70,60,51,0.18)"><a href="{{ z.href }}" style="display:flex;flex-direction:column;gap:6px;padding:18px 4px" style-hover="background:#E9E1D3"><span style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><span style="font-size:16px;font-weight:500">{{ z.ko }}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A6B5A">{{ z.en }}</span></span><span style="font-size:13px;line-height:1.7;color:#65594D">{{ z.desc }}</span></a></li>
+            </sc-for>
+          </ul>
+        </div>
+        <a data-reveal="" href="/treatments/skin-botox" style="flex:1 1 0;min-width:min(100%,300px);background:#463C33;color:#F0EADD;border-radius:4px;padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;gap:16px" style-hover="color:#FFFFFF">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#C9BCA8">SKIN BOTOX · via Dermashine</span>
+          <span style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.05">Skin Botox</span><span style="font-size:15px;font-weight:500">스킨보톡스</span></span>
+          <span style="font-size:14px;line-height:1.85;color:#DCD2C2">진피층에 얕고 고르게 나누어 주입해 피부결을 정돈합니다. 스킨부스터처럼 활용되며, 더마샤인으로 일정한 깊이와 양을 맞춥니다.</span>
+          <span style="display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;padding:4px 9px;border:1px solid rgba(240,234,221,0.4);border-radius:2px">Tightening</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;padding:4px 9px;border:1px solid rgba(240,234,221,0.4);border-radius:2px">Brightening</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;padding:4px 9px;border:1px solid rgba(240,234,221,0.4);border-radius:2px">Pores</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="filler" aria-labelledby="filler-title" style="scroll-margin-top:72px;background:#E9E1D3">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(48px,6vw,80px)">
+      <div style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div data-reveal="" style="flex:1 1 0;min-width:min(100%,260px);display:flex;flex-direction:column;gap:18px">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">4.4 — FILLER</p>
+          <p style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(48px,5.4vw,84px);line-height:0.95">⅓ · ⅓ · ⅓</p>
+        </div>
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:22px">
+          <h2 id="filler-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">모든 필러에는<br>디자인이 들어갑니다.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em;text-wrap:pretty">부위만 채우면 다른 부위의 비율이 달라집니다. 상안부 · 중안부 · 하안부의 균형 안에서 위치와 양, 제품과 깊이를 원장이 직접 디자인합니다.</p>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:{{ car.fit300 }};grid-auto-flow:{{ car.flow }};grid-auto-columns:{{ car.auto }};overflow-x:{{ car.ox }};scroll-snap-type:{{ car.snap }};scrollbar-width:none;margin:0 {{ car.mx }};padding:0 {{ car.px }};scroll-padding-left:{{ car.px }};gap:clamp(18px,2.2vw,28px)">
+        <sc-for list="{{ fillerGroups }}" as="g" hint-placeholder-count="3">
+          <div data-reveal="" style="scroll-snap-align:start;background:#F3EEE5;border-radius:4px;padding:clamp(26px,3vw,38px);display:flex;flex-direction:column;gap:22px">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div aria-hidden="true" style="display:flex;gap:3px;height:4px"><span style="flex:1;background:{{ g.b1 }}"></span><span style="flex:1;background:{{ g.b2 }}"></span><span style="flex:1;background:{{ g.b3 }}"></span></div>
+              <h3 style="margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px">{{ g.en }}</span><span style="font-size:13px;font-weight:400;color:#7A6B5A">{{ g.ko }}</span></h3>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0;border-top:1px solid rgba(70,60,51,0.16)">
+              <sc-for list="{{ g.items }}" as="f" hint-placeholder-count="3">
+                <li style="border-bottom:1px solid rgba(70,60,51,0.16)"><a href="{{ f.href }}" style="display:flex;flex-direction:column;gap:6px;padding:18px 4px" style-hover="background:#ECE5D9"><span style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><span style="display:flex;align-items:baseline;gap:8px"><span style="font-size:16.5px;font-weight:500">{{ f.ko }}</span><sc-if value="{{ f.special }}" hint-placeholder-val="{{ false }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:2px 6px;background:#463C33;color:#F0EADD;border-radius:2px">SPECIAL</span></sc-if></span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A6B5A">{{ f.en }}</span></span><span style="font-size:13px;line-height:1.7;color:#65594D">{{ f.desc }}</span></a></li>
+              </sc-for>
+            </ul>
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ isPhone }}" hint-placeholder-val="{{ false }}"><p aria-hidden="true" style="margin:-10px 0 0;display:flex;justify-content:flex-end;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#7A6B5A">옆으로 넘겨 보기 →</p></sc-if>
+
+      <div data-reveal="" style="background:#463C33;color:#F0EADD;border-radius:4px;padding:clamp(32px,4.4vw,60px);display:flex;flex-wrap:wrap;gap:40px clamp(40px,5vw,80px)">
+        <div style="flex:1 1 0;min-width:min(100%,260px);display:flex;flex-direction:column;gap:16px">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#C9BCA8">SIGNATURE FILLER</p>
+          <h3 style="margin:0;font-weight:300;font-size:clamp(24px,2.4vw,32px);line-height:1.5;letter-spacing:-0.02em">채우는 필러가 아닌,<br>구조를 설계하는 필러.</h3>
+        </div>
+        <ul style="flex:1.618 1 0;min-width:min(100%,400px);list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:0 32px">
+          <sc-for list="{{ signatureFillers }}" as="f" hint-placeholder-count="3">
+            <li style="border-top:1px solid rgba(240,234,221,0.22)"><a href="{{ f.href }}" style="display:flex;flex-direction:column;gap:10px;padding:22px 0;color:#F0EADD" style-hover="color:#FFFFFF"><span style="font-family:'Cormorant Garamond',serif;font-size:32px;line-height:1">{{ f.en }}</span><span style="font-size:13.5px;line-height:1.8;color:#DCD2C2">{{ f.desc }}</span></a></li>
+          </sc-for>
+        </ul>
+      </div>
+
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:24px clamp(40px,5vw,80px);align-items:stretch">
+        <div style="flex:1 1 0;min-width:min(100%,260px);display:flex;flex-direction:column;gap:14px;justify-content:center">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#7A6B5A">BEFORE · AFTER</p>
+          <p style="margin:0;font-size:15px;line-height:1.85;color:#65594D">전후 사진은 환자 동의를 받은 실제 사례만 게시합니다. 동의 절차를 거쳐 순차적으로 공개할 예정입니다.</p>
+        </div>
+        <div style="flex:1.618 1 0;min-width:min(100%,400px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+          <div role="img" aria-label="전후 사례 사진 자리 1" style="aspect-ratio:1/1.236;border-radius:2px;background:#DDD3C3 repeating-linear-gradient(135deg,rgba(70,60,51,0.07) 0 1px,transparent 1px 12px);display:flex;align-items:center;justify-content:center"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#65594D;text-align:center;line-height:1.6">case 01<br>동의 후 게시</span></div>
+          <div role="img" aria-label="전후 사례 사진 자리 2" style="aspect-ratio:1/1.236;border-radius:2px;background:#DDD3C3 repeating-linear-gradient(135deg,rgba(70,60,51,0.07) 0 1px,transparent 1px 12px);display:flex;align-items:center;justify-content:center"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#65594D;text-align:center;line-height:1.6">case 02<br>동의 후 게시</span></div>
+          <div role="img" aria-label="전후 사례 사진 자리 3" style="aspect-ratio:1/1.236;border-radius:2px;background:#DDD3C3 repeating-linear-gradient(135deg,rgba(70,60,51,0.07) 0 1px,transparent 1px 12px);display:flex;align-items:center;justify-content:center"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#65594D;text-align:center;line-height:1.6">case 03<br>동의 후 게시</span></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid rgba(70,60,51,0.18);padding-top:26px">
+        <p style="margin:0;font-size:12.5px;line-height:1.8;color:#7A6B5A;max-width:52em">특수부위 필러는 별도 비용이 안내될 수 있습니다. 시술 후 붓기 · 멍 · 비대칭 · 혈관 관련 합병증 등이 드물게 발생할 수 있습니다.</p>
+        <button type="button" onClick="{{ openRes }}" style="font:inherit;font-size:13px;letter-spacing:0.06em;padding:13px 26px;border-radius:999px;border:1px solid #463C33;background:transparent;color:#463C33;cursor:pointer;transition:background .3s,color .3s" style-hover="background:#463C33;color:#F0EADD">필러 디자인 상담</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipment" aria-labelledby="equipment-title" style="scroll-margin-top:72px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">05 — EQUIPMENT</p>
+          <h2 id="equipment-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">보유 장비</h2>
+        </div>
+        <div role="group" aria-label="장비 분류" style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ chips }}" as="c" hint-placeholder-count="5">
+            <button type="button" aria-pressed="{{ c.active }}" onClick="{{ c.onClick }}" style="font:inherit;font-size:12.5px;padding:9px 16px;border-radius:999px;cursor:pointer;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.color }};transition:all .3s;display:flex;gap:8px;align-items:baseline">{{ c.label }}<span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;opacity:0.7">{{ c.count }}</span></button>
+          </sc-for>
+        </div>
+      </div>
+      <ul style="list-style:none;margin:0;padding:0;border-top:1px solid rgba(70,60,51,0.18)">
+        <sc-for list="{{ equipment }}" as="e" hint-placeholder-count="11">
+          <li style="border-bottom:1px solid rgba(70,60,51,0.18)"><a href="{{ e.href }}" style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:22px 8px;transition:background .3s" style-hover="background:#E9E1D3">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A;width:28px">{{ e.no }}</span>
+            <span style="flex:1 1 240px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-family:'Cormorant Garamond',serif;font-size:28px;line-height:1.1">{{ e.en }}</span><span style="font-size:13.5px;color:#65594D">{{ e.ko }}</span></span>
+            <span style="flex:0 1 200px;font-size:13px;font-weight:500">{{ e.role }}</span>
+            <span style="flex:2 1 300px;font-size:13.5px;line-height:1.75;color:#65594D">{{ e.desc }}</span>
+            <span style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A;min-width:130px;text-align:right">{{ e.catLabel }}</span>
+          </a></li>
+        </sc-for>
+      </ul>
+      <sc-if value="{{ equipMoreShow }}" hint-placeholder-val="{{ false }}"><button type="button" onClick="{{ showAllEquip }}" style="font:inherit;font-size:13.5px;letter-spacing:0.04em;height:48px;border-radius:999px;border:1px solid rgba(70,60,51,0.4);background:transparent;color:#463C33;cursor:pointer">{{ equipMoreLabel }}</button></sc-if>
+      <p style="margin:0;font-size:12.5px;line-height:1.8;color:#7A6B5A">장비 구성은 변경될 수 있으며, 시술의 적합 여부와 횟수는 진료 후 의사가 결정합니다.</p>
+    </div>
+  </section>
+
+  <section id="doctor" aria-labelledby="doctor-title" style="scroll-margin-top:72px;background:#463C33;color:#F0EADD">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;gap:56px clamp(40px,5vw,80px);align-items:flex-end">
+      <figure data-reveal="" style="flex:1 1 0;min-width:min(100%,300px);margin:0">
+        <div style="aspect-ratio:1/1.3;max-height:720px;border-radius:999px 999px 4px 4px;overflow:hidden;background:#A9B3C1"><img src="assets/doctor/lee-juhyeong.jpg" alt="아티오의원 대표원장 이주형 — 흰 가운을 입고 정면을 바라보는 프로필 사진" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 18%"></div>
+        <figcaption style="margin-top:12px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#C9BCA8;display:flex;justify-content:space-between;gap:12px"><span>Dr. Lee Juhyeong</span><span>Representative Director</span></figcaption>
+      </figure>
+      <div style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:40px">
+        <div data-reveal="" style="display:flex;flex-direction:column;gap:24px">
+          <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#C9BCA8">06 — YOUR DOCTOR</p>
+          <h2 id="doctor-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">처음 만난 날부터,<br>당신의 주치의로.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#DCD2C2;max-width:36em">진단 결과를 직접 확인하고, 치료 방향을 직접 결정하고, 경과를 직접 봅니다. 한 사람의 얼굴이 시간에 따라 어떻게 변하는지 기록하며 그 시기에 필요한 만큼만 권합니다.</p>
+          <p style="margin:0;font-size:18px">대표원장 이주형</p>
+        </div>
+        <dl data-reveal="" style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0 48px">
+          <div style="padding:20px 0;border-top:1px solid rgba(240,234,221,0.2);display:flex;flex-direction:column;gap:12px"><dt style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#C9BCA8">CAREER</dt><dd style="margin:0"><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px"><li style="font-size:14.5px;line-height:1.7">현 아티오의원 대표원장</li><li style="font-size:14.5px;line-height:1.7">한림대학교 강동성심병원 전문의</li><li style="font-size:14.5px;line-height:1.7">가정의학과 전문의</li><li style="font-size:14.5px;line-height:1.7">비만전문 인정의</li><li style="font-size:14.5px;line-height:1.7">전 리엔장 성형외과 피부과 총괄원장</li><li style="font-size:14.5px;line-height:1.7">전 포에버의원 원장</li></ul></dd></div>
+          <div style="padding:20px 0;border-top:1px solid rgba(240,234,221,0.2);display:flex;flex-direction:column;gap:12px"><dt style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#C9BCA8">MEMBERSHIP</dt><dd style="margin:0"><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px"><li style="font-size:14.5px;line-height:1.7">대한가정의학회 평생회원</li><li style="font-size:14.5px;line-height:1.7">대한비만학회 정회원</li><li style="font-size:14.5px;line-height:1.7">대한필러학회 회원</li><li style="font-size:14.5px;line-height:1.7">대한미용성형레이저의학회 회원</li><li style="font-size:14.5px;line-height:1.7">대한레이저피부모발학회 회원</li><li style="font-size:14.5px;line-height:1.7">대한리프팅학회 회원</li></ul></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="space" aria-labelledby="space-title" style="scroll-margin-top:72px;background:#E9E1D3">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px) clamp(40px,5vw,64px);display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+      <div data-reveal="" style="flex:1 1 0;min-width:min(100%,260px);display:flex;flex-direction:column;gap:22px">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">07 — PRIVATE SPACE</p>
+        <h2 id="space-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">마주치지 않는 동선,<br>나만의 방.</h2>
+      </div>
+      <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:28px">
+        <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em">상담부터 시술, 회복까지 개인실 중심으로 동선을 설계했습니다. 따뜻한 뉴트럴 톤과 우드, 곡선과 간접 조명이 긴장을 덜어줍니다.</p>
+        <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:0 24px;border-top:1px solid rgba(70,60,51,0.18)">
+          <div style="padding:16px 0;display:flex;flex-direction:column;gap:4px"><dt style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">상담실</dt><dd style="margin:0;font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1">3</dd></div>
+          <div style="padding:16px 0;display:flex;flex-direction:column;gap:4px"><dt style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">시술실</dt><dd style="margin:0;font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1">2</dd></div>
+          <div style="padding:16px 0;display:flex;flex-direction:column;gap:4px"><dt style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">레이저실</dt><dd style="margin:0;font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1">2</dd></div>
+          <div style="padding:16px 0;display:flex;flex-direction:column;gap:4px"><dt style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">VIP 개인실</dt><dd style="margin:0;font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1">3</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,5vw,64px) clamp(64px,11vw,168px)">
+      <ul aria-label="공간 갤러리" style="list-style:none;margin:0;padding:0 0 16px;display:flex;gap:clamp(14px,1.6vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin">
+        <li style="flex:0 0 min(78vw,620px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1.618/1;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/lobby.jpg" alt="원형 간접조명 천장 아래 곡선형 인포데스크와 라운지 소파" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">01 Reception &amp; lounge</figcaption></figure></li>
+        <li style="flex:0 0 min(62vw,380px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1/1.236;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/vip-corridor.jpg" alt="우드 패널과 라인 조명이 이어지는 VIP 복도" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">02 Private corridor</figcaption></figure></li>
+        <li style="flex:0 0 min(78vw,620px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1.618/1;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/consult-1.jpg" alt="반투명 유리문으로 나뉜 세 개의 1:1 상담실" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">03 Consultation rooms</figcaption></figure></li>
+        <li style="flex:0 0 min(62vw,380px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1/1.236;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/consult-2.jpg" alt="대리석 벽과 펜던트 조명이 있는 상담실 내부" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">04 Consultation</figcaption></figure></li>
+        <li style="flex:0 0 min(78vw,620px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1.618/1;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/vip-single-2.jpg" alt="반원형 간접조명 거울과 우드 화장대가 있는 VIP 1인실" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">05 VIP single — vanity</figcaption></figure></li>
+        <li style="flex:0 0 min(62vw,380px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1/1.236;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/vip-single-1.jpg" alt="우드 천장 아래 침대 하나가 놓인 VIP 1인 시술실" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">06 VIP single room</figcaption></figure></li>
+        <li style="flex:0 0 min(78vw,620px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1.618/1;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/vip-twin-2.jpg" alt="곡선 간접조명 벽과 침대 두 개가 놓인 VIP 2인실" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">07 VIP twin room</figcaption></figure></li>
+        <li style="flex:0 0 min(62vw,380px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1/1.236;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/vip-twin-1.jpg" alt="반원형 조명 벽 앞에 침대 두 개가 나란히 놓인 VIP 2인실" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">08 VIP twin room</figcaption></figure></li>
+        <li style="flex:0 0 min(62vw,380px);scroll-snap-align:start"><figure style="margin:0;display:flex;flex-direction:column;gap:12px"><div style="aspect-ratio:1/1.236;border-radius:4px;overflow:hidden;background:#DDD3C3"><img src="assets/space2/powder-2.jpg" alt="라운드 조명 거울 두 개와 세면대가 있는 파우더룸" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"></div><figcaption style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">09 Powder room</figcaption></figure></li>
+      </ul>
+      <p style="margin:16px 0 0;font-size:12px;color:#7A6B5A">* 인테리어 3D 시안 이미지입니다. 준공 후 실사 사진으로 교체됩니다.</p>
+    </div>
+  </section>
+
+  <section id="qna" aria-labelledby="qna-title" style="scroll-margin-top:72px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,7vw,96px)">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:32px clamp(40px,5vw,80px);align-items:flex-end">
+        <div style="flex:1 1 0;min-width:min(100%,260px)"><p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">08 — CLINICAL NOTES &amp; Q&amp;A</p></div>
+        <div style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:18px">
+          <h2 id="qna-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">짧은 답부터,<br>의사의 판단 근거까지.</h2>
+          <p style="margin:0;font-size:15.5px;line-height:1.95;color:#65594D;max-width:36em">모든 답은 질문 → 짧은 답 → 상세 설명 순서로 작성합니다.</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:48px clamp(40px,5vw,80px);align-items:flex-start">
+        <div data-reveal="" style="flex:1 1 0;min-width:min(100%,300px);display:flex;flex-direction:column;gap:16px">
+          <h3 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:400;color:#7A6B5A">CLINICAL NOTES · 의학 칼럼</h3>
+          <ol style="list-style:none;margin:0;padding:0;border-top:1px solid rgba(70,60,51,0.18)">
+            <sc-for list="{{ notes }}" as="n" hint-placeholder-count="5">
+              <li style="border-bottom:1px solid rgba(70,60,51,0.18)"><a href="{{ n.href }}" style="display:flex;flex-direction:column;gap:8px;padding:20px 4px;transition:background .3s" style-hover="background:#E9E1D3"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A6B5A">{{ n.meta }}</span><span style="font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.25">{{ n.title }}</span></a></li>
+            </sc-for>
+          </ol>
+        </div>
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,460px);display:flex;flex-direction:column;gap:16px">
+          <h3 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:400;color:#7A6B5A">Q&amp;A · 자주 묻는 질문</h3>
+          <div style="border-top:1px solid rgba(70,60,51,0.18)">
+            <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="8">
+              <details style="border-bottom:1px solid rgba(70,60,51,0.18)">
+                <summary style="list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;gap:24px;align-items:center"><span style="display:flex;align-items:baseline;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A6B5A;min-width:52px">{{ q.cat }}</span><span style="font-size:16.5px;font-weight:500">{{ q.q }}</span></span><span class="faq-plus" style="font-size:22px;font-weight:300;transition:transform .3s">+</span></summary>
+                <div style="padding:0 0 26px 66px;display:flex;flex-direction:column;gap:10px;max-width:46em"><p style="margin:0;font-size:15px;font-weight:500">{{ q.short }}</p><p style="margin:0;font-size:14.5px;line-height:1.9;color:#65594D">{{ q.long }}</p></div>
+              </details>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" aria-labelledby="location-title" style="scroll-margin-top:72px;background:#E9E1D3">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,11vw,168px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,7vw,104px)">
+      <div style="display:flex;flex-wrap:wrap;gap:48px clamp(40px,5vw,80px);align-items:stretch">
+        <div data-reveal="" style="flex:1 1 0;min-width:min(100%,340px);display:flex;flex-direction:column;gap:32px">
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#7A6B5A">09 — LOCATION</p>
+            <h2 id="location-title" style="margin:0;font-weight:300;font-size:clamp(28px,3.2vw,46px);line-height:1.42;letter-spacing:-0.03em">강남역,<br>강남대로 위.</h2>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding-bottom:4px">
+            <p style="margin:0;font-size:19px;font-weight:500;letter-spacing:-0.01em">아티오의원 <span style="font-weight:400;color:#7A6B5A">(강남)</span></p>
+            <p style="margin:0;font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:0.12em;color:#65594D">ARTIO CLINIC GANGNAM</p>
+          </div>
+          <address style="font-style:normal;display:flex;flex-direction:column;border-top:1px solid #463C33">
+            <div style="padding:20px 0;border-bottom:1px solid rgba(70,60,51,0.18);display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7A6B5A;padding-top:3px">ADDRESS</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:15px;line-height:1.75">서울특별시 서초구<br><span style="white-space:nowrap">강남대로65길 1,</span> <span style="white-space:nowrap">효봉빌딩 10층</span></span><span style="font-size:12.5px;line-height:1.7;color:#7A6B5A">1, Gangnam-daero 65-gil, Seocho-gu, Seoul · 10F</span></span></div>
+            <div style="padding:20px 0;border-bottom:1px solid rgba(70,60,51,0.18);display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7A6B5A;padding-top:3px">SUBWAY</span><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5"><li style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#3C8A3E;color:#FFFFFF;font-size:11px;font-weight:600">2</span><span>강남역 <strong style="font-weight:500">10번 출구</strong></span></li><li style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#8A6A2E;color:#FFFFFF;font-size:11px;font-weight:600">9</span><span>신논현역 <strong style="font-weight:500">7 · 8번 출구</strong></span></li></ul></div>
+            <div style="padding:20px 0;border-bottom:1px solid rgba(70,60,51,0.18);display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7A6B5A;padding-top:3px">HOURS</span><dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:15px;line-height:1.5"><dt style="color:#65594D">평일</dt><dd style="margin:0;font-variant-numeric:tabular-nums;white-space:nowrap">10:00 – 20:00</dd><dt style="color:#65594D">토요일</dt><dd style="margin:0;font-variant-numeric:tabular-nums;white-space:nowrap">10:00 – 16:00</dd><dt style="color:#65594D">일요일</dt><dd style="margin:0;color:#8A5A44">휴진</dd><dd style="grid-column:1/-1;margin:6px 0 0;font-size:12.5px;line-height:1.7;color:#7A6B5A">공휴일 진료시간은 홈페이지 공지로 안내드립니다.</dd></dl></div>
+            <div style="padding:20px 0;border-bottom:1px solid rgba(70,60,51,0.18);display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7A6B5A;padding-top:3px">TEL</span><a href="tel:+82221380312" style="font-size:15px;font-variant-numeric:tabular-nums;justify-self:start;border-bottom:1px solid #B9A992;padding-bottom:2px">02-2138-0312</a></div>
+            <div style="padding:20px 0;border-bottom:1px solid rgba(70,60,51,0.18);display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7A6B5A;padding-top:3px">FAX</span><span style="font-size:15px;font-variant-numeric:tabular-nums">02-2138-0313</span></div>
+          </address>
+        </div>
+        <div data-reveal="" style="flex:1.618 1 0;min-width:min(100%,400px);display:flex;flex-direction:column;gap:14px">
+          <div style="position:relative;flex:1;min-height:440px;border-radius:4px;overflow:hidden;background:#DDD3C3">
+            <iframe title="아티오의원 위치 — Google 지도" src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C65%EA%B8%B8%201%20%ED%9A%A8%EB%B4%89%EB%B9%8C%EB%94%A9&amp;hl=ko&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(0.55) sepia(0.12) contrast(0.98)"></iframe>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#7A6B5A">GOOGLE MAPS · 효봉빌딩 10F</span>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C65%EA%B8%B8%201%20%ED%9A%A8%EB%B4%89%EB%B9%8C%EB%94%A9" target="_blank" rel="noopener" style="font-size:12.5px;letter-spacing:0.04em;padding:10px 18px;border-radius:999px;border:1px solid rgba(70,60,51,0.35);transition:background .3s,color .3s" style-hover="background:#463C33;color:#F0EADD">Google 지도에서 보기</a>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C65%EA%B8%B8%201%20%ED%9A%A8%EB%B4%89%EB%B9%8C%EB%94%A9" target="_blank" rel="noopener" style="font-size:12.5px;letter-spacing:0.04em;padding:10px 18px;border-radius:999px;border:1px solid #463C33;background:#463C33;color:#F0EADD;transition:background .3s" style-hover="background:#5A4E43;color:#F0EADD">길찾기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reservation" data-reveal="" style="scroll-margin-top:96px;background:#F3EEE5;border-radius:4px;padding:clamp(32px,4.4vw,64px);display:flex;flex-direction:column;gap:36px">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#7A6B5A">RESERVATION</p>
+            <h3 style="margin:0;font-weight:300;font-size:clamp(24px,2.4vw,32px);line-height:1.5;letter-spacing:-0.02em">한 사람을 위한 시간을 먼저 비워 둡니다.</h3>
+          </div>
+          <p style="margin:0;font-size:13.5px;line-height:1.8;color:#65594D;max-width:26em">For international patients — English, 中文, 日本語 via WhatsApp, WeChat and LINE.</p>
+        </div>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:12px">
+          <sc-for list="{{ channels }}" as="ch" hint-placeholder-count="6">
+            <li><a href="{{ ch.href }}" style="display:flex;flex-direction:column;gap:8px;padding:20px 20px 22px;border:1px solid rgba(70,60,51,0.18);border-radius:4px;transition:border-color .3s,background .3s;height:100%" style-hover="border-color:#463C33;background:#FAF7F1"><span style="display:flex;justify-content:space-between;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A6B5A"><span>{{ ch.region }}</span><span>{{ ch.status }}</span></span><span style="font-size:17px;font-weight:500">{{ ch.name }}</span><span style="font-size:13px;color:#65594D">{{ ch.sub }}</span></a></li>
+          </sc-for>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer style="background:#463C33;color:#DCD2C2">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(64px,8vw,112px) clamp(20px,5vw,64px) 40px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <img src="assets/brand/logo-v-light.png" alt="ARTIO CLINIC 아티오의원" width="1331" height="808" loading="lazy" style="height:96px;width:auto;align-self:flex-start">
+        <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px">Individualized Golden Ratio.</span>
+      </div>
+      <nav aria-label="푸터 메뉴" style="display:grid;grid-template-columns:repeat(2,minmax(130px,auto));gap:12px 48px;font-size:13px">
+        <a href="#philosophy" style="color:#DCD2C2;padding:6px 0">Philosophy</a><a href="#lifting" style="color:#DCD2C2;padding:6px 0">Lifting</a>
+        <a href="#journey" style="color:#DCD2C2;padding:6px 0">Journey</a><a href="#booster" style="color:#DCD2C2;padding:6px 0">Skin Booster</a>
+        <a href="#doctor" style="color:#DCD2C2;padding:6px 0">Doctor</a><a href="#botox" style="color:#DCD2C2;padding:6px 0">Botox</a>
+        <a href="#qna" style="color:#DCD2C2;padding:6px 0">Notes &amp; Q&amp;A</a><a href="#filler" style="color:#DCD2C2;padding:6px 0">Filler</a>
+      </nav>
+    </div>
+    <div style="border-top:1px solid rgba(240,234,221,0.16);padding-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;font-size:12px;line-height:1.9;color:#C9BCA8">
+      <p style="margin:0">아티오의원 · 대표자 이주형 · 사업자등록번호 [000-00-00000]<br>서울특별시 서초구 강남대로65길 1, 효봉빌딩 10층 · TEL <a href="tel:+82221380312" style="color:#DCD2C2">02-2138-0312</a> · FAX 02-2138-0313</p>
+      <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start">
+        <div style="display:flex;gap:20px;flex-wrap:wrap"><a href="/ko/privacy" style="color:#DCD2C2">개인정보처리방침</a><a href="/ko/fees" style="color:#DCD2C2">비급여 진료비용</a><a href="/ko/facts" style="color:#DCD2C2">ARTIO Facts</a></div>
+        <span>© 2026 ARTIO Clinic. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<sc-if value="{{ isPhone }}" hint-placeholder-val="{{ false }}"><div aria-hidden="true" style="height:calc(68px + env(safe-area-inset-bottom));background:#463C33"></div></sc-if>
+
+<sc-if value="{{ showBar }}" hint-placeholder-val="{{ false }}">
+  <div role="navigation" aria-label="빠른 상담" style="position:fixed;left:0;right:0;bottom:0;z-index:35;background:rgba(243,238,229,0.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(70,60,51,0.14);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.618fr);gap:10px">
+    <a href="tel:+82221380312" style="display:flex;align-items:center;justify-content:center;height:48px;border:1px solid rgba(70,60,51,0.4);border-radius:999px;font-size:14px;letter-spacing:0.04em;color:#463C33">전화 문의</a>
+    <button type="button" onClick="{{ openRes }}" style="font:inherit;font-size:14px;letter-spacing:0.04em;height:48px;border-radius:999px;border:1px solid #463C33;background:#463C33;color:#F0EADD;cursor:pointer">상담 예약</button>
+  </div>
+</sc-if>
+
+<sc-if value="{{ showFloat }}" hint-placeholder-val="{{ false }}">
+  <button type="button" onClick="{{ openRes }}" aria-label="상담 예약 열기" style="position:fixed;right:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,32px);z-index:30;font:inherit;font-size:12.5px;letter-spacing:0.06em;padding:13px 22px;border-radius:999px;border:1px solid rgba(240,234,221,0.3);background:#463C33;color:#F0EADD;cursor:pointer;box-shadow:0 10px 30px rgba(70,60,51,0.18)">상담 예약</button>
+</sc-if>
+
+<sc-if value="{{ resOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeRes }}" style="position:fixed;inset:0;z-index:60;background:rgba(46,39,33,0.42);display:flex;justify-content:flex-end">
+    <div role="dialog" aria-modal="true" aria-labelledby="res-title" onClick="{{ stop }}" style="width:min(100%,460px);height:100%;overflow:auto;background:#F3EEE5;padding:28px clamp(24px,4vw,44px) 44px;display:flex;flex-direction:column;gap:32px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <img src="assets/brand/logo-h-dark.png" alt="ARTIO CLINIC 아티오의원" width="2355" height="401" style="height:28px;width:auto">
+        <button type="button" onClick="{{ closeRes }}" aria-label="닫기" style="width:44px;height:44px;border:none;background:transparent;font-size:26px;font-weight:300;color:#463C33;cursor:pointer">×</button>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#7A6B5A">RESERVATION · 100% 예약제</p>
+        <h2 id="res-title" style="margin:0;font-weight:300;font-size:26px;line-height:1.5;letter-spacing:-0.02em">상담 예약</h2>
+        <p style="margin:0;font-size:14px;line-height:1.85;color:#65594D">원하는 채널을 선택해 주세요. 진단과 상담에 필요한 시간을 확보한 뒤 가능한 일정을 안내드립니다.</p>
+      </div>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid rgba(70,60,51,0.18)">
+        <sc-for list="{{ channels }}" as="ch" hint-placeholder-count="6">
+          <li style="border-bottom:1px solid rgba(70,60,51,0.18)"><a href="{{ ch.href }}" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 4px;min-height:44px" style-hover="background:#E9E1D3"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:16px;font-weight:500">{{ ch.name }}</span><span style="font-size:12.5px;color:#65594D">{{ ch.sub }}</span></span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7A6B5A">{{ ch.status }}</span></a></li>
+        </sc-for>
+      </ul>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ noticeShow }}" hint-placeholder-val="{{ false }}">
+  <aside role="dialog" aria-labelledby="notice-title" style="position:fixed;left:clamp(12px,3vw,32px);bottom:clamp(12px,3vw,32px);z-index:50;width:min(calc(100% - 24px),360px);background:#F3EEE5;border:1px solid rgba(70,60,51,0.18);border-radius:4px;box-shadow:0 18px 48px rgba(70,60,51,0.16);display:flex;flex-direction:column">
+    <div style="padding:22px 24px 18px;display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#7A6B5A">NOTICE</span><button type="button" onClick="{{ closeNotice }}" aria-label="공지 닫기" style="width:32px;height:32px;margin:-8px -8px -8px 0;border:none;background:transparent;font-size:20px;font-weight:300;color:#463C33;cursor:pointer">×</button></div>
+      <h2 id="notice-title" style="margin:0;font-size:17px;font-weight:500;line-height:1.5">{{ noticeTitle }}</h2>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#65594D;white-space:pre-line">{{ noticeBody }}</p>
+    </div>
+    <div style="display:flex;border-top:1px solid rgba(70,60,51,0.14)">
+      <button type="button" onClick="{{ hideNoticeToday }}" style="flex:1;font:inherit;font-size:12.5px;padding:14px;border:none;border-right:1px solid rgba(70,60,51,0.14);background:transparent;color:#7A6B5A;cursor:pointer">오늘 하루 보지 않기</button>
+      <button type="button" onClick="{{ closeNotice }}" style="flex:1;font:inherit;font-size:12.5px;padding:14px;border:none;background:transparent;color:#463C33;cursor:pointer">닫기</button>
+    </div>
+  </aside>
+</sc-if>
+
+<sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+  <div role="status" style="position:fixed;left:50%;bottom:{{ toastB }};transform:translateX(-50%);z-index:80;background:#463C33;color:#F0EADD;font-size:13px;padding:12px 22px;border-radius:999px;max-width:calc(100% - 32px);text-align:center">{{ toast }}</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroVisual&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Golden Ratio Portrait&quot;,&quot;Vitruvian Man&quot;,&quot;De Divina Proportione&quot;,&quot;Dürer&quot;,&quot;ARTIO Original&quot;,&quot;Space photo&quot;],&quot;default&quot;:&quot;Golden Ratio Portrait&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;heroRotate&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;rotateSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:3,&quot;max&quot;:12,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;default&quot;:5,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;slogan&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;당신만의 비율, 당신만의 아름다움&quot;,&quot;비율이 예술이 되는 곳&quot;,&quot;궁극의 비율, 궁극의 아름다움&quot;],&quot;default&quot;:&quot;당신만의 비율, 당신만의 아름다움&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;noticeOn&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Notice popup&quot;},&quot;noticeTitle&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;공휴일 진료 안내&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Notice popup&quot;},&quot;noticeBody&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[예시] 12월 25일(금) 성탄절은 10:00 – 16:00 진료합니다.\n진료 일정은 02-2138-0312로 문의해 주세요.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Notice popup&quot;},&quot;floatingReserve&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Reservation&quot;}}">
+// ───────── EDITABLE DATA — 장비 · 시술 변경 시 아래 배열만 수정하세요 ─────────
+// cat: 'lifting' | 'skin' | 'injector' | 'care'
+const DEVICES = [
+  { en: 'Ulthera Prime', ko: '울쎄라 프라임', cat: 'lifting', slug: 'ulthera-prime', role: 'Contour · Sagging', tech: 'MFU-V 초음파 · 실시간 영상', depth: 'SMAS · 근막층', desc: '실시간 초음파 영상으로 피부층을 확인하며 근막층(SMAS)까지 에너지를 전달합니다. 처진 윤곽과 무너진 턱선을 끌어올리는 데 강점이 있습니다.', fit: '볼 · 턱선 처짐이 시작되어 윤곽이 흐려진 경우' },
+  { en: 'Thermage FLX', ko: '써마지 FLX', cat: 'lifting', slug: 'thermage-flx', role: 'Tightening · Texture', tech: 'Monopolar RF', depth: '진피 · 피하', desc: '고주파로 진피 전반을 고르게 가열해 콜라겐 수축과 재생을 유도합니다. 피부를 전체적으로 조이는 타이트닝과 피부결 개선에 강점이 있습니다.', fit: '피부가 얇아지고 잔주름 · 탄력 저하가 고민인 경우' },
+  { en: 'ONDA', ko: '온다', cat: 'lifting', slug: 'onda', role: 'Contouring · Fat', tech: 'Microwave (Coolwaves)', depth: '피하지방층', desc: '마이크로웨이브 에너지가 피하지방층에 작용해 이중턱 · 심부볼처럼 지방으로 무거워진 윤곽을 정리하고 탄력을 더합니다.', fit: '지방 때문에 얼굴선이 둔하고 무거워 보이는 경우' },
+  { en: 'XERF', ko: '세르프', cat: 'lifting', slug: 'xerf', role: 'Layered Tightening', tech: 'Dual Monopolar RF', depth: '얕은 층 ~ 깊은 층', desc: '서로 다른 두 주파수의 고주파로 깊이를 나눠 열에너지를 전달합니다. 층별로 탄력과 결을 함께 다룹니다.', fit: '전반적인 탄력 저하와 피부결 고민이 함께 있는 경우' },
+  { en: 'CoolSoniq', ko: '쿨소닉', cat: 'lifting', slug: 'coolsoniq', role: 'Lifting · Comfort', tech: 'HIFU + Cooling', depth: 'SMAS · 진피', desc: '표피 냉각 기능을 갖춘 집속초음파 리프팅입니다. 통증 부담을 줄이며 처짐의 깊이에 맞춰 에너지를 전달합니다.', fit: '리프팅이 필요하지만 통증에 민감한 경우' },
+  { en: 'Potenza', ko: '포텐자', cat: 'skin', slug: 'potenza', role: 'Pores · Scars · Delivery', tech: 'Microneedle RF', depth: '진피', desc: '미세침으로 고주파를 전달해 모공, 흉터, 피부결을 개선합니다. 약물 전달 팁으로 스킨부스터 흡수를 돕기도 합니다.', fit: '' },
+  { en: 'LUCAS', ko: '루카스', cat: 'skin', slug: 'lucas', role: 'Pigment · Tone', tech: 'Q-switched Nd:YAG 532 / 1064nm', depth: '표피 · 진피', desc: '두 파장과 여러 모드로 기미 · 잡티 · 색소침착과 피부톤을 단계적으로 다룹니다.', fit: '' },
+  { en: 'CO₂ Laser', ko: '탄산가스 레이저', cat: 'skin', slug: 'co2-laser', role: 'Lesion Removal', tech: 'CO₂ 10,600nm', depth: '국소', desc: '점 · 쥐젖 · 비립종 등 국소 병변을 정밀하게 제거합니다.', fit: '' },
+  { en: 'Dermashine', ko: '더마샤인', cat: 'injector', slug: 'dermashine', role: 'Booster Delivery', tech: 'Automatic micro-injector', depth: '진피', desc: '일정한 깊이와 양으로 스킨부스터와 스킨보톡스를 촘촘하게 주입하는 자동 주입 장비입니다.', fit: '' },
+  { en: 'LDM', ko: '엘디엠', cat: 'care', slug: 'ldm', role: 'Soothing · Absorption', tech: 'Dual-frequency ultrasound', depth: '표피 · 진피', desc: '초음파로 피부를 진정시키고 수분 공급과 부스터 성분 흡수를 돕습니다. 시술 후 회복 케어로도 사용합니다.', fit: '' },
+  { en: 'Aquapeel', ko: '아쿠아필', cat: 'care', slug: 'aquapeel', role: 'Deep Cleansing', tech: 'Hydro peeling', depth: '표피', desc: '피지와 각질을 부드럽게 정리해 다음 시술과 관리의 바탕을 만듭니다.', fit: '' },
+];
+const DEVICE_CATS = { lifting: 'Lifting', skin: 'Skin & Laser', injector: 'Injector', care: 'Care' };
+
+// tags: 'Injection' | 'Dermashine' | 'MTS' | 'LDM'
+const BOOSTERS = [
+  { en: 'Rejuran Healer', ko: '리쥬란 힐러', base: 'PN · Polynucleotide', slug: 'rejuran-healer', desc: '연어 유래 PN 성분이 손상된 피부의 회복 환경을 돕고 피부결과 탄력을 개선합니다.', tags: ['Injection', 'Dermashine'] },
+  { en: 'Rejuran Healer · Painless', ko: '리쥬란 힐러 무통', base: 'PN · 통증 완화', slug: 'rejuran-painless', desc: '통증 부담을 줄인 방식으로 진행하는 리쥬란 힐러입니다.', tags: ['Injection', 'Dermashine'] },
+  { en: 'Rejuran HB', ko: '리쥬란 HB', base: 'PN + HA', slug: 'rejuran-hb', desc: 'PN과 히알루론산을 함께 담아 회복과 수분감을 동시에 고려합니다.', tags: ['Injection', 'Dermashine'] },
+  { en: 'Re2O', ko: '리투오', base: 'ECM · hADM', slug: 're2o', desc: '인체 유래 세포외기질(ECM)을 진피에 보충해 피부 밀도와 탄력, 잔주름을 개선하는 스킨부스터입니다.', tags: ['Injection'] },
+  { en: 'HILOWAVE', ko: '힐로웨이브', base: 'HA · 고분자 + 저분자', slug: 'hilowave', desc: '고분자와 저분자 히알루론산을 함께 담아 속건조와 탄력, 자연스러운 볼륨감을 다룹니다.', tags: ['Injection'] },
+  { en: 'Sculptra', ko: '스컬트라', base: 'PLLA · Collagen stimulator', slug: 'sculptra', desc: '시간을 두고 자가 콜라겐 생성을 유도해 꺼진 부위의 볼륨과 탄력을 서서히 회복합니다.', tags: ['Injection'] },
+  { en: 'Topical Boosters', ko: '흡수형 부스터 (엑소좀 등)', base: 'Non-injectable', slug: 'topical-boosters', desc: '주사가 아닌 MTS · LDM으로 피부에 흡수시키는 부스터입니다. 다운타임 부담이 적습니다.', tags: ['MTS', 'LDM'] },
+  { en: 'Dermashine', ko: '더마샤인 부스터', base: 'Injector', slug: 'dermashine', desc: '선택한 부스터를 일정한 깊이와 양으로 촘촘하게 주입합니다. 스킨보톡스도 이 방식으로 진행합니다.', tags: ['Dermashine'] },
+];
+const METHODS = [
+  { tag: 'INJECTION', ko: '주사', desc: '원하는 부위와 깊이에 직접 주입합니다. 꺼짐이나 국소 부위를 정밀하게 다룰 때 사용합니다.', solid: true },
+  { tag: 'DERMASHINE', ko: '더마샤인', desc: '자동 주입 장비로 얼굴 전체에 일정한 깊이 · 양을 고르게 전달합니다.', solid: true },
+  { tag: 'MTS · LDM', ko: '흡수형 전달', desc: 'MTS(Microneedle Therapy System)나 초음파(LDM)로 성분을 흡수시킵니다. 주사가 어려운 부스터에 사용합니다.', solid: false },
+];
+
+const BOTOX_AREAS = [
+  { ko: '이마', en: 'FOREHEAD', slug: 'forehead', desc: '눈썹은 자연스럽게 움직이도록 남기고 가로 주름만 옅게' },
+  { ko: '미간', en: 'GLABELLA', slug: 'glabella', desc: '찡그림 습관으로 생긴 세로 주름 완화' },
+  { ko: '눈가', en: "CROW'S FEET", slug: 'crows-feet', desc: '웃는 눈매는 남기고 눈꼬리 잔주름만' },
+  { ko: '눈밑', en: 'UNDER-EYE', slug: 'under-eye', desc: '소량으로 눈밑 잔주름과 근육 뭉침 완화' },
+  { ko: '자갈턱', en: 'CHIN DIMPLING', slug: 'chin-dimpling', desc: '턱끝 근육 긴장으로 생기는 오돌토돌한 주름' },
+  { ko: '콧등', en: 'BUNNY LINES', slug: 'bunny-lines', desc: '웃을 때 콧등에 잡히는 주름' },
+];
+
+// special: true → 특수부위(추가 비용) 배지 표시
+const FILLER_GROUPS = [
+  { en: 'Upper third', ko: '상안부', pos: 0, items: [
+    { ko: '이마', en: 'FOREHEAD', slug: 'forehead', desc: '굴곡과 볼륨을 다듬어 옆모습 라인을 연결', special: false },
+    { ko: '관자', en: 'TEMPLE', slug: 'temple', desc: '꺼진 관자를 채워 상안부의 폭과 곡선 정리', special: false },
+  ] },
+  { en: 'Middle third', ko: '중안부', pos: 1, items: [
+    { ko: '눈밑', en: 'TEAR TROUGH', slug: 'tear-trough', desc: '꺼진 눈밑 경계를 완만하게 연결', special: false },
+    { ko: '애교', en: 'AEGYO-SAL', slug: 'aegyo-sal', desc: '눈매에 어울리는 두께로 소량 주입', special: false },
+    { ko: '앞볼', en: 'ANTERIOR CHEEK', slug: 'anterior-cheek', desc: '앞광대 아래를 채워 생기 있는 중안부', special: false },
+    { ko: '옆볼', en: 'LATERAL CHEEK', slug: 'lateral-cheek', desc: '광대 아래 꺼진 옆볼을 매끄럽게', special: false },
+    { ko: '팔자', en: 'NASOLABIAL', slug: 'nasolabial', desc: '중안부 꺼짐과 함께 보고 팔자 주름 완화', special: false },
+  ] },
+  { en: 'Lower third', ko: '하안부', pos: 2, items: [
+    { ko: '입술', en: 'LIPS', slug: 'lips', desc: '입술선 · 입꼬리 · 인중 각도까지 디자인', special: false },
+    { ko: '턱끝', en: 'CHIN', slug: 'chin', desc: '턱끝의 길이와 각도로 옆모습 비율 보완', special: false },
+    { ko: '턱라인', en: 'JAWLINE', slug: 'jawline', desc: '턱끝에서 턱선까지 하안부 윤곽 정리', special: false },
+  ] },
+];
+const SIGNATURE_FILLERS = [
+  { en: 'MD Code', slug: 'md-code', desc: '얼굴의 해부학적 지지 포인트를 기준으로 위치와 양을 체계화한 리프팅 필러' },
+  { en: 'G Plan', slug: 'g-plan', desc: '[G Plan 설명 — 원장님 프로토콜 확정 후 입력]' },
+  { en: 'Masculine Filler', slug: 'masculine', desc: '이마 · 턱 · 턱선의 각과 구조감을 살리는 남성형 필러 디자인' },
+];
+
+const JOURNEY = [
+  { en: 'Private Arrival', ko: '개인실 안내', who: 'COORDINATOR', desc: '도착 후 다른 환자와 마주치지 않도록 개인실로 안내합니다.' },
+  { en: '3D Diagnosis', ko: '이브 뮤즈 3D 진단', who: 'DIAGNOSIS', desc: '피부 상태와 얼굴의 입체 구조, 볼륨 분포, 비대칭을 촬영 · 분석합니다.' },
+  { en: 'Consultation', ko: '상담실장 상담', who: 'COUNSELOR', desc: '진단 결과를 함께 보며 고민과 일정, 회복 기간을 충분히 듣습니다.' },
+  { en: "Doctor's Design", ko: '원장 확인 · 최종 설계', who: 'DOCTOR', desc: '원장이 직접 얼굴을 보고 장비 · 샷 수 · 부위 · 용량을 확정합니다.' },
+  { en: 'Treatment', ko: '개인실 시술', who: 'DOCTOR', desc: '설계한 내용 그대로, 개인실에서 시술을 진행합니다.' },
+  { en: 'Soothing & Recovery', ko: '진정 및 회복', who: 'AFTERCARE', desc: 'LDM · 진정 케어로 피부를 가라앉히고, 충분히 쉬신 뒤 귀가하실 수 있도록 돕습니다.' },
+  { en: 'Follow-up', ko: '경과 확인 · 다음 계획', who: 'LIFELONG', desc: '변화를 함께 확인하고 생애주기 플랜에 기록합니다.' },
+];
+const STAGES = [
+  { age: '20s', en: 'FOUNDATION', ko: '피부 바탕과 예방', desc: '피부결과 수분, 색소를 관리하고 표정 습관으로 생기는 주름을 미리 다룹니다.', ex: '스킨부스터 · 루카스 · 표정주름 보톡스' },
+  { age: '30s', en: 'MAINTAIN', ko: '탄력 유지와 비율 보정', desc: '초기 탄력 저하를 관리하고, 필요한 부위만 필러로 비율을 다듬습니다.', ex: '써마지 · 세르프 · 부위별 필러' },
+  { age: '40s', en: 'RESTORE', ko: '처짐과 볼륨 재배치', desc: '처지기 시작한 층을 리프팅하고, 빠진 볼륨을 구조적으로 받칩니다.', ex: '울쎄라 · 쿨소닉 · MD Code' },
+  { age: '50s+', en: 'SUPPORT', ko: '구조 지지와 피부 회복', desc: '여러 층을 함께 다루는 복합 설계로 구조와 피부 밀도를 함께 회복합니다.', ex: '복합 리프팅 · 스컬트라 · 리투오' },
+];
+const NOTES = [
+  { title: 'Ultherapy vs Thermage: how a doctor chooses', meta: 'NOTE 01 · LIFTING · 준비 중', slug: 'ultherapy-vs-thermage' },
+  { title: 'Why the number of shots is a prescription, not a package', meta: 'NOTE 02 · LIFTING · 준비 중', slug: 'shots-as-prescription' },
+  { title: 'When filler improves facial proportion — and when it does not', meta: 'NOTE 03 · FILLER · 준비 중', slug: 'filler-and-facial-proportion' },
+  { title: 'Why skin quality matters before adding volume', meta: 'NOTE 04 · SKIN · 준비 중', slug: 'skin-quality-before-volume' },
+  { title: 'Botox without the mask: keeping natural expression', meta: 'NOTE 05 · BOTOX · 준비 중', slug: 'botox-natural-expression' },
+];
+const FAQS = [
+  { cat: 'LIFTING', q: '울쎄라와 써마지는 어떻게 다른가요?', short: '작용하는 깊이와 목적이 다릅니다.', long: '울쎄라는 초음파로 깊은 근막층(SMAS)에 작용해 처진 윤곽을 끌어올리는 데, 써마지는 고주파로 진피층을 가열해 피부를 조이는 타이트닝에 강점이 있습니다. 처짐의 층과 피부 두께를 보고 하나를 고르거나 함께 설계합니다.' },
+  { cat: 'LIFTING', q: '리프팅 샷 수는 어떻게 정하나요?', short: '진단 후 원장이 부위별로 직접 정합니다.', long: '샷 수는 많을수록 좋은 것이 아니라 처짐의 정도, 피부 두께, 부위 면적에 따라 달라집니다. 정해진 패키지 대신 부위별 처방으로 안내드립니다.' },
+  { cat: 'BOTOX', q: '보톡스를 맞으면 표정이 어색해지나요?', short: '표정은 남기고 주름만 옅게 하는 것을 목표로 합니다.', long: '근육의 움직임을 보고 위치와 용량을 나누어 주입합니다. 주름은 옅어지지만 여전히 웃고 찡그릴 수 있어 굳은 인상이 생기지 않도록 합니다.' },
+  { cat: 'BOOSTER', q: '스킨부스터는 주사로만 맞을 수 있나요?', short: '아니요. 흡수형 방법도 있습니다.', long: '주사나 더마샤인으로 직접 주입하는 방법 외에, 주사가 어려운 성분은 MTS나 LDM으로 피부에 흡수시킵니다. 피부 상태와 회복 일정에 맞춰 선택합니다.' },
+  { cat: 'FILLER', q: '필러 비용이 부위마다 다른 이유는 무엇인가요?', short: '디자인 난이도와 사용량이 다르기 때문입니다.', long: '대부분의 필러에는 원장의 디자인이 포함됩니다. 구조적 설계가 더 필요한 특수부위는 별도 비용이 안내될 수 있습니다.' },
+  { cat: 'VISIT', q: '시술 전 누구와 상담하나요?', short: '상담실장과 원장, 두 번 확인합니다.', long: '3D 진단 후 상담실장과 고민 · 일정 · 회복 기간을 먼저 이야기하고, 원장이 직접 얼굴을 보고 최종 설계를 확정한 뒤 시술합니다.' },
+  { cat: 'VISIT', q: '외국인 환자도 상담할 수 있나요?', short: '가능합니다.', long: '영어 · 중국어 · 일본어 상담과 WhatsApp, WeChat, LINE 예약 채널을 준비하고 있습니다. International patients are welcome.' },
+  { cat: 'VISIT', q: '비용은 어떻게 안내받나요?', short: '진료 후 치료 계획과 함께 안내드립니다.', long: '필요한 장비와 샷 수, 용량이 사람마다 달라 상담에서 정한 계획을 기준으로 설명드립니다. [비급여 진료비용 고지 페이지 연결 예정]' },
+];
+const CHANNELS = [
+  { name: '전화 상담', sub: '02-2138-0312', region: 'KOREA', status: 'CALL', href: 'tel:+82221380312' },
+  { name: '카카오톡', sub: 'KakaoTalk 채널', region: 'KOREA', status: '연결 예정', href: '#channel-kakao' },
+  { name: '온라인 예약', sub: '예약 신청서 작성', region: 'ALL', status: '연결 예정', href: '#channel-form' },
+  { name: 'WhatsApp', sub: 'English consultation', region: 'GLOBAL', status: 'Coming soon', href: '#channel-whatsapp' },
+  { name: 'WeChat', sub: '中文咨询', region: 'CHINA', status: 'Coming soon', href: '#channel-wechat' },
+  { name: 'LINE', sub: '日本語相談', region: 'JAPAN', status: 'Coming soon', href: '#channel-line' },
+];
+const SLOGANS = ['당신만의 비율, 당신만의 아름다움', '비율이 예술이 되는 곳', '궁극의 비율, 궁극의 아름다움'];
+// ─────────────────────────────────────────────────────────────
+
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, equipAll: false, menu: false, res: false, filter: 'all', toast: '', y: false, hero: null, sl: 0, noticeClosed: (() => { try { return localStorage.getItem('artio-notice-hide') === new Date().toISOString().slice(0, 10); } catch (e) { return false; } })() };
+
+  componentDidMount() {
+    this.startRotate();
+    this.onResize = () => this.setState({ w: window.innerWidth });
+    this.onScroll = () => { const y = window.scrollY > 700; if (y !== this.state.y) this.setState({ y }); };
+    this.onKey = (e) => { if (e.key === 'Escape') this.setState({ res: false, menu: false }); };
+    this.onClick = (e) => {
+      const a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      const h = a.getAttribute('href');
+      if (h.startsWith('/') && !h.startsWith('//')) {
+        e.preventDefault();
+        this.showToast(/^\/(en|zh|ja)/.test(h) ? '다국어 페이지는 다음 단계에서 제작됩니다' : `상세 페이지 준비 중 · ${h}`);
+      } else if (h.startsWith('#channel')) { e.preventDefault(); this.showToast('채널 연결 예정 — 운영 계정 확정 후 활성화'); }
+    };
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('keydown', this.onKey);
+    document.addEventListener('click', this.onClick);
+    this.setupReveal();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('keydown', this.onKey);
+    document.removeEventListener('click', this.onClick);
+    window.removeEventListener('scroll', this.revealCheck);
+    window.removeEventListener('resize', this.revealCheck);
+    clearTimeout(this.failsafe); cancelAnimationFrame(this.raf); clearTimeout(this.tt); clearInterval(this.rot);
+  }
+  setupReveal() {
+    if (!this.revealCheck) {
+      this.revealCheck = () => {
+        if (this.raf) return;
+        this.raf = requestAnimationFrame(() => {
+          this.raf = 0;
+          const h = window.innerHeight;
+          document.querySelectorAll('[data-rv="hidden"]').forEach((el) => { if (el.getBoundingClientRect().top < h - 40) this.reveal(el); });
+        });
+      };
+      window.addEventListener('scroll', this.revealCheck, { passive: true });
+      window.addEventListener('resize', this.revealCheck);
+      this.failsafe = setTimeout(() => document.querySelectorAll('[data-rv="hidden"]').forEach((el) => this.reveal(el)), 2500);
+    }
+    document.querySelectorAll('[data-reveal]:not([data-rv])').forEach((el) => {
+      if (el.getBoundingClientRect().top < window.innerHeight) { el.setAttribute('data-rv', 'shown'); return; }
+      el.setAttribute('data-rv', 'hidden');
+      el.style.opacity = '0'; el.style.transform = 'translateY(14px)';
+      el.style.transition = 'opacity 1.1s cubic-bezier(.2,.6,.2,1), transform 1.1s cubic-bezier(.2,.6,.2,1)';
+    });
+    this.revealCheck();
+  }
+  reveal(el) { el.setAttribute('data-rv', 'shown'); el.style.opacity = '1'; el.style.transform = 'none'; }
+  startRotate() {
+    clearInterval(this.rot);
+    if (this.props.heroRotate === false) return;
+    const sec = Math.max(3, this.props.rotateSeconds ?? 5);
+    this.rot = setInterval(() => { if (!document.hidden) this.setState((s) => ({ sl: (s.sl + 1) % SLOGANS.length })); }, sec * 1000);
+  }
+  componentDidUpdate(pp) {
+    this.setupReveal();
+    if (pp.heroRotate !== this.props.heroRotate || pp.rotateSeconds !== this.props.rotateSeconds) this.startRotate();
+  }
+  showToast(t) { clearTimeout(this.tt); this.setState({ toast: t }); this.tt = setTimeout(() => this.setState({ toast: '' }), 2600); }
+
+  renderVals() {
+    const pad = (i) => String(i + 1).padStart(2, '0');
+    const f = this.state.filter;
+    const dev = (d) => ({ ...d, href: `/treatments/${d.slug}`, catLabel: DEVICE_CATS[d.cat] });
+    const equipment = DEVICES.map((d, i) => ({ ...dev(d), no: pad(i) })).filter((d) => f === 'all' || d.cat === f);
+    const chips = [['all', 'All'], ...Object.entries(DEVICE_CATS)].map(([k, label]) => {
+      const active = f === k;
+      return { label, active, count: k === 'all' ? DEVICES.length : DEVICES.filter((d) => d.cat === k).length, border: active ? '#463C33' : 'rgba(70,60,51,0.24)', bg: active ? '#463C33' : 'transparent', color: active ? '#F0EADD' : '#463C33', onClick: () => this.setState({ filter: k }) };
+    });
+    const fillerCount = FILLER_GROUPS.reduce((n, g) => n + g.items.length, 0) + SIGNATURE_FILLERS.length;
+    const areas = [
+      { en: 'Lifting', ko: '리프팅', href: '#lifting', count: `${DEVICES.filter((d) => d.cat === 'lifting').length} devices`, desc: '장비와 샷 수를 원장이 처방하는 ARTIO Lifting Design' },
+      { en: 'Skin Booster', ko: '스킨부스터', href: '#booster', count: `${BOOSTERS.length} items`, desc: '성분과 전달 방법까지 함께 고르는 피부 바탕 관리' },
+      { en: 'Botox', ko: '보톡스', href: '#botox', count: `${BOTOX_AREAS.length + 1} areas`, desc: '표정은 남기고 주름만 옅게, 그리고 스킨보톡스' },
+      { en: 'Filler', ko: '필러', href: '#filler', count: `${fillerCount} designs`, desc: '모든 필러에 원장의 디자인이 들어갑니다' },
+    ].map((a, i) => ({ ...a, no: pad(i) }));
+    const fillerGroups = FILLER_GROUPS.map((g) => ({
+      en: g.en, ko: g.ko,
+      b1: g.pos === 0 ? '#463C33' : '#D8CDBC', b2: g.pos === 1 ? '#463C33' : '#D8CDBC', b3: g.pos === 2 ? '#463C33' : '#D8CDBC',
+      items: g.items.map((it) => ({ ...it, href: `/treatments/filler/${it.slug}` })),
+    }));
+    const mobileLinks = [['#philosophy', 'Philosophy', '철학'], ['#journey', 'Journey', '진료 과정'], ['#lifelong', 'Lifelong Plan', '생애주기 플랜'], ['#lifting', 'Lifting', '리프팅'], ['#booster', 'Skin Booster', '스킨부스터'], ['#botox', 'Botox', '보톡스'], ['#filler', 'Filler', '필러'], ['#equipment', 'Equipment', '보유 장비'], ['#doctor', 'Doctor', '의료진'], ['#qna', 'Notes & Q&A', '칼럼 · 질문'], ['#location', 'Location', '오시는 길']].map(([href, en, ko]) => ({ href, en, ko }));
+    const si = this.props.heroRotate === false ? Math.max(0, SLOGANS.indexOf(this.props.slogan)) : this.state.sl;
+    const sl = SLOGANS.map((_, i) => ({ op: i === si ? 1 : 0, ty: i === si ? '0px' : '8px', hidden: i !== si, pe: i === si ? 'auto' : 'none' }));
+    const slDots = SLOGANS.map((label, i) => ({ label, active: i === si, color: i === si ? '#463C33' : 'rgba(70,60,51,0.25)', onClick: () => { this.setState({ sl: i }); this.startRotate(); } }));
+    const mobile = this.state.w < 1180;
+    const phone = this.state.w < 640;
+    const HERO = [['f', '1f 황금비율 인물', 'Golden Ratio Portrait'], ['a', '1a 비트루비우스', 'Vitruvian Man'], ['b', '1b 파치올리', 'De Divina Proportione'], ['c', '1c 뒤러', 'Dürer'], ['d', '1d ARTIO 오리지널', 'ARTIO Original'], ['e', '1e 공간 사진', 'Space photo']];
+    const hv = this.state.hero || (HERO.find((h) => h[2] === this.props.heroVisual) || HERO[0])[0];
+    const heroOpts = HERO.map(([id, label]) => ({ label, active: hv === id, bg: hv === id ? '#E9E1D2' : 'transparent', fg: hv === id ? '#463C33' : '#E9E1D2', onClick: () => this.setState({ hero: id }) }));
+    return {
+      heroA: hv === 'a', heroB: hv === 'b', heroC: hv === 'c', heroD: hv === 'd', heroE: hv === 'e', heroF: hv === 'f', heroOpts,
+      isMobile: mobile, isDesktop: !mobile, isPhone: phone, notPhone: !phone,
+      hdrH: phone ? '60px' : '72px', logoH: phone ? '28px' : '34px',
+      heroOrder: phone ? -1 : 0, heroAspect: phone ? '4/4.4' : '1/1.2',
+      car: phone
+        ? { fit300: 'none', fill300: 'none', flow: 'column', auto: '84%', ox: 'auto', snap: 'x mandatory', mx: '-20px', px: '20px' }
+        : { fit300: 'repeat(auto-fit,minmax(min(100%,300px),1fr))', fill300: 'repeat(auto-fill,minmax(min(100%,300px),1fr))', flow: 'row', auto: 'auto', ox: 'visible', snap: 'none', mx: '0px', px: '0px' },
+      showBar: phone && !this.state.res && !this.state.menu,
+      toastB: phone ? 'calc(88px + env(safe-area-inset-bottom))' : '32px',
+      equipMoreShow: phone && !this.state.equipAll && equipment.length > 5,
+      equipMoreLabel: `전체 장비 보기 (${equipment.length})`,
+      showAllEquip: () => this.setState({ equipAll: true }), menuOpen: mobile && this.state.menu,
+      toggleMenu: () => this.setState((st) => ({ menu: !st.menu })),
+      closeMenu: () => this.setState({ menu: false }),
+      sl0: sl[0], sl1: sl[1], sl2: sl[2], slDots,
+      noticeShow: (this.props.noticeOn ?? false) && !this.state.noticeClosed && !this.state.res,
+      noticeTitle: this.props.noticeTitle ?? '공휴일 진료 안내',
+      noticeBody: this.props.noticeBody ?? '[예시] 12월 25일(금) 성탄절은 10:00 – 16:00 진료합니다.\n진료 일정은 02-2138-0312로 문의해 주세요.',
+      closeNotice: () => this.setState({ noticeClosed: true }),
+      hideNoticeToday: () => { try { localStorage.setItem('artio-notice-hide', new Date().toISOString().slice(0, 10)); } catch (e) {} this.setState({ noticeClosed: true }); },
+      openRes: () => this.setState({ res: true, menu: false }),
+      closeRes: () => this.setState({ res: false }),
+      stop: (e) => e.stopPropagation(),
+      resOpen: this.state.res,
+      showFloat: !phone && (this.props.floatingReserve ?? true) && this.state.y && !this.state.res,
+      ...(() => { const J = JOURNEY.map((j, i) => ({ ...j, no: pad(i), line: j.who === 'DOCTOR' ? '#463C33' : 'rgba(70,60,51,0.25)', dot: j.who === 'DOCTOR' ? '#463C33' : '#B9A992' })); return { journeyA: J.slice(0, 4), journeyB: J.slice(4) }; })(),
+      jCols: this.state.w >= 1100 ? 'repeat(4,minmax(0,1fr))' : this.state.w >= 620 ? 'repeat(2,minmax(0,1fr))' : 'minmax(0,1fr)',
+      stages: STAGES, areas,
+      liftDevices: DEVICES.filter((d) => d.cat === 'lifting').map(dev),
+      methods: METHODS.map((m) => ({ ...m, bg: m.solid ? '#463C33' : 'transparent', fg: m.solid ? '#F0EADD' : '#463C33' })),
+      boosters: BOOSTERS.map((b) => ({ ...b, href: `/treatments/skin-booster/${b.slug}` })),
+      botoxAreas: BOTOX_AREAS.map((z) => ({ ...z, href: `/treatments/botox/${z.slug}` })),
+      fillerGroups,
+      signatureFillers: SIGNATURE_FILLERS.map((x) => ({ ...x, href: `/treatments/filler/${x.slug}` })),
+      equipment: phone && !this.state.equipAll ? equipment.slice(0, 5) : equipment, chips,
+      notes: NOTES.map((n) => ({ ...n, href: `/insights/${n.slug}` })),
+      faqs: FAQS, channels: CHANNELS, mobileLinks,
+      toast: this.state.toast, hasToast: !!this.state.toast,
+    };
+  }
+}
+</script>
+</body>
+</html>
